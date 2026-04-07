@@ -1,0 +1,9 @@
+backup_dir = "~/game-backups"
+temp_dir = "~/.cache/gsm/tmp"
+restore_dir = "~/.cache/gsm/restore"
+log_file = "~/.local/state/gsm/gsm.log"
+remote = "gdrive:/game-backups"
+retention_days = 7
+allow_manual_fallback = true
+check_running_processes = true
+running_process_patterns = "steam|wine|gamescope|\\.exe"

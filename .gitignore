@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
+*.swp
+*.tar.gz
+*.sha256
+*.bak
+.env
+dist/
+build/

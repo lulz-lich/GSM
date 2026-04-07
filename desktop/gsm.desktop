@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GSM
+Comment=Game Save Manager
+Exec=sh -lc "$HOME/gsm/src/gsm_gui.py"
+Icon=utilities-terminal
+Type=Application
+Categories=Utility;System;
+Terminal=false
+StartupNotify=true
