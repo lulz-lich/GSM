@@ -13,6 +13,30 @@ expand_path() {
     echo "${path/#\~/$HOME}"
 }
 
+set_config() {
+    local key="$1"
+    local value="$2"
+    local file="$3"
+
+    if grep -qE "^${key}[[:space:]]*=" "$file"; then
+        sed -i "s|^${key}[[:space:]]*=.*|${key} = \"${value}\"|" "$file"
+    else
+        echo "${key} = \"${value}\"" >> "$file"
+    fi
+}
+
+set_config_raw() {
+    local key="$1"
+    local value="$2"
+    local file="$3"
+
+    if grep -qE "^${key}[[:space:]]*=" "$file"; then
+        sed -i "s|^${key}[[:space:]]*=.*|${key} = ${value}|" "$file"
+    else
+        echo "${key} = ${value}" >> "$file"
+    fi
+}
+
 if [ ! -f "$CONFIG_FILE" ]; then
     echo "GSM config not found: $CONFIG_FILE"
     exit 1
@@ -24,9 +48,10 @@ RESTORE_DIR="$(expand_path "$(read_config restore_dir "$CONFIG_FILE")")"
 LOG_FILE="$(expand_path "$(read_config log_file "$CONFIG_FILE")")"
 REMOTE="$(read_config remote "$CONFIG_FILE")"
 RETENTION_DAYS="$(read_config retention_days "$CONFIG_FILE")"
-ALLOW_MANUAL_FALLBACK="$(read_config allow_manual_fallback "$CONFIG_FILE")"
+MAX_BACKUPS_PER_GAME="$(read_config max_backups_per_game "$CONFIG_FILE")"
 CHECK_RUNNING_PROCESSES="$(read_config check_running_processes "$CONFIG_FILE")"
 RUNNING_PROCESS_PATTERNS="$(read_config running_process_patterns "$CONFIG_FILE")"
+SCHEDULE="$(read_config schedule "$CONFIG_FILE")"
 
 mkdir -p "$BACKUP_DIR"
 mkdir -p "$TEMP_DIR"
