@@ -1,0 +1,21 @@
+---
+name: Vampire Survivors
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:38.351835726Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/Vampire Survivors/system.reg:
+        hash: 7b60cc291e82e9a68833666142e45d82ec00d986
+        size: 4378198
+      /home/henrick/Games/Heroic/Prefixes/default/Vampire Survivors/user.reg:
+        hash: fcb427c7f1b6cb4a0bcfac4a41bcbab7fcdac6c7
+        size: 320480
+      /home/henrick/Games/Heroic/Prefixes/default/Vampire Survivors/userdef.reg:
+        hash: 55b401e0918bad10921cdb7f1f63f6ad6284b5b1
+        size: 4190
+    registry:
+      hash: ~
+    children: []

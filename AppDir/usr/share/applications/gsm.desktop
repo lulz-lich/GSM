@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GSM
+Comment=Game Save Manager
+Exec=gsm-launch
+Icon=gsm
+Categories=Utility;
+Terminal=false
+StartupNotify=true

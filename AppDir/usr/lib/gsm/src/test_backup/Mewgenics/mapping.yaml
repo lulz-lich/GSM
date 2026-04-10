@@ -1,0 +1,18 @@
+---
+name: Mewgenics
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:36.469190973Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/Mewgenics/drive_c/users/steamuser/AppData/Roaming/Glaiel Games/Mewgenics/76561197960271872/saves/steamcampaign01.sav:
+        hash: 5ddd743d2575376dc940d3fe6dd04c3474d84ab4
+        size: 61440
+      /home/henrick/Games/Heroic/Prefixes/default/Mewgenics/drive_c/users/steamuser/AppData/Roaming/Glaiel Games/Mewgenics/76561197960271872/saves/test00.sav:
+        hash: 9a150cfb27337ab1d7fff7e686a2d2fe8f96f9d4
+        size: 32768
+    registry:
+      hash: ~
+    children: []

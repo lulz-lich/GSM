@@ -1,30 +1,36 @@
 # GSM
 
-<p align="center">
-  <pre>
-   ____ ____  __  __
-  / ___/ ___||  \/  |
- | |  _\___ \| |\/| |
- | |_| |___) | |  | |
-  \____|____/|_|  |_|
+Game Save Manager for Linux and Windows.
 
-  Game Save Manager
-  minimal • modular • syncable
-  </pre>
-</p>
+GSM creates versioned backups of game saves, uploads them to the cloud, synchronizes the backup library between machines, and restores saves when needed.
 
-<p align="center">
-  <strong>A minimal, customizable game save manager for Linux.</strong>
-</p>
+It is designed to work safely across Linux and Windows without one side corrupting or deleting the other.
 
-<p align="center">
-  <img alt="Platform" src="https://img.shields.io/badge/platform-Linux-blue">
-  <img alt="Arch" src="https://img.shields.io/badge/arch-friendly-1793D1">
-  <img alt="Shell" src="https://img.shields.io/badge/CLI-Bash-4EAA25">
-  <img alt="GUI" src="https://img.shields.io/badge/GUI-GTK-5E5C64">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-green">
-</p>
+---
 
-GSM is a Unix-style tool for backing up, restoring, and synchronizing game saves across multiple Linux machines using cloud storage through Rclone.
+## Main Features
 
-It supports GUI, CLI, and TUI usage, automatic save detection with Ludusavi, manual fallback for unsupported games, per-game compressed archives, SHA256 integrity files, and systemd-based automation.
+- Automatic save detection with Ludusavi
+- Manual backup for unsupported games
+- Cloud upload with Rclone
+- Versioned backups per game
+- SHA256 integrity files
+- Backup retention per game
+- Sync backup library from cloud
+- Restore latest backup
+- Restore all backups
+- Restore the latest backup of a specific game
+- Linux GUI
+- Linux TUI
+- Windows GUI
+- Linux AppImage support
+- Windows single-file EXE build
+
+---
+
+## Important Safety Rule
+
+GSM uses:
+
+```text
+rclone copy

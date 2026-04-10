@@ -1,0 +1,24 @@
+---
+name: Pummel Party
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:37.997439464Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/Pummel party/drive_c/users/steamuser/AppData/LocalLow/Rebuilt Games/Pummel Party/Player.log:
+        hash: 3d83f6e20280bfbbc69d21b8418f825b34e7626a
+        size: 83601
+      /home/henrick/Games/Heroic/Prefixes/default/Pummel party/system.reg:
+        hash: 8a4811c22cf7bf847a2acf6e0718966c9d3f2696
+        size: 4378198
+      /home/henrick/Games/Heroic/Prefixes/default/Pummel party/user.reg:
+        hash: ab501c1ec53eb2bcb693e846f35f6c67848977fa
+        size: 539529
+      /home/henrick/Games/Heroic/Prefixes/default/Pummel party/userdef.reg:
+        hash: 55b401e0918bad10921cdb7f1f63f6ad6284b5b1
+        size: 4190
+    registry:
+      hash: ~
+    children: []

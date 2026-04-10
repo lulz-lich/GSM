@@ -1,0 +1,30 @@
+---
+name: Super Meat Boy
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:36.785436596Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/SuperMeatBoy/UserData/Reg0.dat:
+        hash: 251d0a5874660864278987fc32d6ee15593d1b63
+        size: 144
+      /home/henrick/Games/Heroic/SuperMeatBoy/UserData/SMBLog.log:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/Games/Heroic/SuperMeatBoy/UserData/TommunismEngine.log:
+        hash: b46afb8188a0a625eaefc9b54592877dd442509e
+        size: 343301
+      /home/henrick/Games/Heroic/SuperMeatBoy/UserData/blank.txt:
+        hash: 20ff4d8d6d2e3da5eab161a38622d45a276b2772
+        size: 17
+      /home/henrick/Games/Heroic/SuperMeatBoy/UserData/savegame.dat:
+        hash: 3c9718187d2713d0a2199767b70ce4006bf76c9d
+        size: 7336
+      /home/henrick/Games/Heroic/SuperMeatBoy/UserData/savegame.dat.bak:
+        hash: d5e8a4500a85cb78c6b4e6c2dbd8893993a4e4e4
+        size: 7336
+    registry:
+      hash: ~
+    children: []

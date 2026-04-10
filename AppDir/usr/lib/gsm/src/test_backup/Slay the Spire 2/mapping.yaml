@@ -1,0 +1,432 @@
+---
+name: Slay the Spire 2
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:39.483285807Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/default/1/settings.save:
+        hash: f0f4fb520bcc9e45405d7bca4ea9112539540658
+        size: 2232
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/default/1/settings.save.backup:
+        hash: f0f4fb520bcc9e45405d7bca4ea9112539540658
+        size: 2232
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/logs/godot.log:
+        hash: 697a646415ecea2f6c140ebf3a5ee79aca5b1d47
+        size: 297
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/logs/godot2026-04-07T06.25.28.log:
+        hash: 16b1455b4886dd7d8623b1711e7198b40ab365a1
+        size: 212919
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/logs/godot2026-04-07T12.36.16.log:
+        hash: 35427d6af965f2d484acbaf6bbb828165a6e7e03
+        size: 12095869
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/logs/godot2026-04-07T12.37.27.log:
+        hash: 23c58504ac5be3873918a76de279962ec6c67076
+        size: 15202
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/logs/godot2026-04-07T22.38.40.log:
+        hash: 23c58504ac5be3873918a76de279962ec6c67076
+        size: 15202
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/sentry.dat:
+        hash: 413d5726253da236f6e730feda1285dbfcca73a6
+        size: 63
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/sentry/eae258c7-0e81-42d9-3268-8fa896ce7124.run/__sentry-breadcrumb1:
+        hash: bbfd14f2d411cad09781292d2d41588c71deac79
+        size: 5736
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/sentry/eae258c7-0e81-42d9-3268-8fa896ce7124.run/__sentry-breadcrumb2:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/sentry/eae258c7-0e81-42d9-3268-8fa896ce7124.run/__sentry-event:
+        hash: a647705d3dbf031662772915c305f83544329a61
+        size: 1958
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/sentry/metadata:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/sentry/settings.dat:
+        hash: b0a5b0ffb8273efb3e737470b0900b94f3a332ea
+        size: 40
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/BestFitNormalShaderRD/27fa356c6fe738bbb3d373643ed7aa9b28b4f9ebb746668ef479b57bcf3bce2b/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 7c4a8d55f03fc0dbc0162c6ffb4defdea12886fb
+        size: 1760
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/BestFitNormalShaderRD/27fa356c6fe738bbb3d373643ed7aa9b28b4f9ebb746668ef479b57bcf3bce2b/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 974a82f5ddd8410783690612cde76d533c4a3765
+        size: 836
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/BlitShaderRD/da9bd39ccf93b13de6c06c50edaa9e3ed39708f5e5b770cfc75d341aeb9ea0e4/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 90bc76a11b2b6c31e856797956953a86afe2bf09
+        size: 17192
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/BlitShaderRD/da9bd39ccf93b13de6c06c50edaa9e3ed39708f5e5b770cfc75d341aeb9ea0e4/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 66ab5f02ade11ab25cfbaa2ee8f359e61e9dc04b
+        size: 5672
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/BokehDofShaderRD/143edd1219c43cec59f1dfcfdd0a8ecab4e50a36bfe19e7ed49c460943c4ff7b/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: b6a70cc014f70379c15195af6656894ee541fad2
+        size: 13884
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/BokehDofShaderRD/143edd1219c43cec59f1dfcfdd0a8ecab4e50a36bfe19e7ed49c460943c4ff7b/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 8bcf5cfb19a6ce1dcf60860ac1052d560ba8d2dc
+        size: 5828
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasOcclusionShaderRD/8fcd25f3b3b258d45009a5a54187ff27eba9649890ac23ec1a5dce75e6670dfc/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 6753337e997d375136ce7a5e77571e8fd7ba30b2
+        size: 10100
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasOcclusionShaderRD/8fcd25f3b3b258d45009a5a54187ff27eba9649890ac23ec1a5dce75e6670dfc/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 6a270ab9e894f0cc71b8e8b5b5ec3a9caa98dada
+        size: 2900
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasSdfShaderRD/368b4b7c84d86374afe2553594e5cd85845d47fed8736627101f722e8ad2b4ef/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 509ff759245fffe3f42ec6f86aaa43f39607cdbb
+        size: 14016
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasSdfShaderRD/368b4b7c84d86374afe2553594e5cd85845d47fed8736627101f722e8ad2b4ef/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: c2f6f96314aeed3c42e19b6857d266012824e980
+        size: 4684
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 38862357931cc9bf3bea8c144f1471d57b7457b4
+        size: 94176
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 8853518311569ddcb6e1a292d120c9462e1b5703
+        size: 41048
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/45fb1ddc6499e56682916a355ce2839e61f42dfe.d3d12.cache:
+        hash: 8ee128903a931a8e8267f95757ae21c52a50b53c
+        size: 49256
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/45fb1ddc6499e56682916a355ce2839e61f42dfe.vulkan.cache:
+        hash: 58bce91cca08a074568b08827dc66279266e516e
+        size: 25352
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/49c11bf710007fdb67c4c698b4367825ba34f67a.d3d12.cache:
+        hash: f3c6b4b61272c7d803416a21db329c2e73f742c3
+        size: 95628
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/49c11bf710007fdb67c4c698b4367825ba34f67a.vulkan.cache:
+        hash: 034d38bc7e7faaf4f273278fac54ae2fe5870d61
+        size: 43832
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/57f4d63d25f9d511a715a0e1187ab478804c3514.d3d12.cache:
+        hash: 615ec2addcd4125df4364ab461bf1dc4b4073c16
+        size: 96104
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/57f4d63d25f9d511a715a0e1187ab478804c3514.vulkan.cache:
+        hash: 38c7cb2d3e9aef4e6e33e80357d313d609e96e1e
+        size: 42300
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/8a7277c8d3ac029b087c3fa9c55de85560be5119.d3d12.cache:
+        hash: 89a28cc43edc72d795550cc747099daa73b86633
+        size: 50032
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CanvasShaderRD/5344a20fff45907833af19dd862db296481988f28c71207b4bbcb33af0cd0604/8a7277c8d3ac029b087c3fa9c55de85560be5119.vulkan.cache:
+        hash: f1c3b3f4cbcb761a0f41d5ad04db70858331d243
+        size: 25660
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ClusterDebugShaderRD/1ba8ed654c0602be46475848512f4b5bbfba5fad229904e6c2332bc9c5508f1e/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 2ff6b1b4ba15302dffa7e9f3ae131c1ac29c3f29
+        size: 4068
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ClusterDebugShaderRD/1ba8ed654c0602be46475848512f4b5bbfba5fad229904e6c2332bc9c5508f1e/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: dad541388331a3cf3878c537830017c96721eaef
+        size: 1696
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ClusterRenderShaderRD/1dbd871dd2b02f2f65bd38399f5668be72e97a021b2965420a3ad69362e08f0a/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 56f6d0d6126c3dfbeb61ebc3ce413c189677fe34
+        size: 10340
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ClusterRenderShaderRD/1dbd871dd2b02f2f65bd38399f5668be72e97a021b2965420a3ad69362e08f0a/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 06e162fde812cfc914a4af504b281b8c94f80363
+        size: 2912
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ClusterStoreShaderRD/2b2f11f9aff61b851bc2b11035128b32db5e2dd6698342293b6347a7ba6a085d/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: b3e6c19fdf00dddc664e788b9a9ef9383d9522e8
+        size: 2552
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ClusterStoreShaderRD/2b2f11f9aff61b851bc2b11035128b32db5e2dd6698342293b6347a7ba6a085d/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 18bca519277d2a31e10ed05ead31936ac0ebf7f4
+        size: 1176
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CopyShaderRD/d6103e33b463e66b194ea881e1ca0751074712b4e693676b0442445adb10f4b3/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: b63c2843924694eb39bb2f3d646a5f72cf0faea5
+        size: 38160
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CopyShaderRD/d6103e33b463e66b194ea881e1ca0751074712b4e693676b0442445adb10f4b3/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 6fff588ee5b71db05bdb4d78965cf758eee223ac
+        size: 13120
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CopyToFbShaderRD/a87e73cd56040c7f84acd17337a41ad7acffaf31a352cc7c5ac755efd7a5b89b/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: ad1269e1f195dc8d5d5c0bb845d74b0bba9031a6
+        size: 17620
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CopyToFbShaderRD/a87e73cd56040c7f84acd17337a41ad7acffaf31a352cc7c5ac755efd7a5b89b/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 6e9d45dbd6a1c181650915a618584259e3be9b4f
+        size: 5352
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubeToDpShaderRD/334ac138e689d7c22ab40710cee5114665236f810fd0b630f9a6c2d14a3bffc1/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 63940e3966e1b56504d068f1e099822b69999595
+        size: 3724
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubeToDpShaderRD/334ac138e689d7c22ab40710cee5114665236f810fd0b630f9a6c2d14a3bffc1/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: eba222dc9d4b150236c76a9e7f762ad119149767
+        size: 1320
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubemapDownsamplerShaderRD/fad3611dd8b51ea521a68cdfcf1ec860b89e8c27739ea7f54bce343102018759/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 7cec9b6b5d4a94c3c052917c0c52d9bf1fc8782c
+        size: 4268
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubemapDownsamplerShaderRD/fad3611dd8b51ea521a68cdfcf1ec860b89e8c27739ea7f54bce343102018759/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 767db2a35dfa5d65e8653e1bac03d656d37a2ee1
+        size: 1888
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubemapFilterShaderRD/34cb47ca5183f8cbc3f72753274813e35841b89f0ce0b5bdd65cf3d98b905419/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: a4145d65e1486cd0647d41f6611f545e733dad51
+        size: 20672
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubemapFilterShaderRD/34cb47ca5183f8cbc3f72753274813e35841b89f0ce0b5bdd65cf3d98b905419/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: bf21c2549f594ea5fcda63fc1e156a1e472d7273
+        size: 10084
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubemapRoughnessShaderRD/bb1367f3c9a8bbd73c1e3580d4b810d827c2cee5686fbed9c014f2bd10eb2fba/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 5d0ffd15f86e7ba1f6cfbbf4488c288e77943e5c
+        size: 3776
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/CubemapRoughnessShaderRD/bb1367f3c9a8bbd73c1e3580d4b810d827c2cee5686fbed9c014f2bd10eb2fba/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 74c601cdc4d693c9474d2ff55659c97911a007bf
+        size: 1972
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/FsrUpscaleShaderRD/f29202e073c5ec5f038d4e9356dfc2aec74811c20a3d2be3e3f9f6af9d6d94f8/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 3c4639488039bb7f351777fe9d87a3c2edf6e431
+        size: 30592
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/FsrUpscaleShaderRD/f29202e073c5ec5f038d4e9356dfc2aec74811c20a3d2be3e3f9f6af9d6d94f8/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: e10bc4403936210d145d68eaf25fc9cf74742994
+        size: 11516
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/GiShaderRD/15cdace9645f6cfabb484a61bbaa34dc3f6ef2b03fb871217236234150993e91/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 93db8279bb1bdd6ebabe05b789774d467e450059
+        size: 57660
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/GiShaderRD/15cdace9645f6cfabb484a61bbaa34dc3f6ef2b03fb871217236234150993e91/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: ded60f5a04e6278e00309cfd03094ef7be26c8db
+        size: 30440
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/IntegrateDfgShaderRD/e31fa725014186821c3e3646c90ba3af4706f1c8cfbbb018e55f4b3e031a4807/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 31b4f16f7fb39bffd976f39d1580695256d982d8
+        size: 2220
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/IntegrateDfgShaderRD/e31fa725014186821c3e3646c90ba3af4706f1c8cfbbb018e55f4b3e031a4807/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 316197712c410aadddce75951aa733715e540ad2
+        size: 1992
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/LuminanceReduceShaderRD/db36be952ee1c5d5a634d0077edf4335d6d81bf8f71f81f36440c38ac8944368/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 6c476bc6f380270499222d61e0c1432c8cb1c5ae
+        size: 8148
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/LuminanceReduceShaderRD/db36be952ee1c5d5a634d0077edf4335d6d81bf8f71f81f36440c38ac8944368/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 17e55b6a24f9ea659a361641dfeb3d5bd8d9180b
+        size: 2740
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/MotionVectorsShaderRD/8c118681e8be867ff48f1589888c03e77da3f276e74ec4881585a9a588f5dc45/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 47fbdef8b469b1eba2218e27bd3bb328cbf887d2
+        size: 4284
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/MotionVectorsShaderRD/8c118681e8be867ff48f1589888c03e77da3f276e74ec4881585a9a588f5dc45/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 7501ea3d7aa71c804b5559ef63e4b64054dcb985
+        size: 1612
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ParticlesCopyShaderRD/5405d948e6a853449f8ed26499a00bfa6c04683f10aab246d2b5414938df57ae/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 2952cfca0813ef9ba45e7981b7e2b8cf18131fb9
+        size: 86052
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ParticlesCopyShaderRD/5405d948e6a853449f8ed26499a00bfa6c04683f10aab246d2b5414938df57ae/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 8763c188957633a2348b9f645fd29368f920c6d8
+        size: 33320
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ParticlesShaderRD/2c975b9f606a53e70d85ecefa151a80fae56cc782297a091e5a51c667179c328/f128cab0b22fb7e0d9f023d6cdb81309be392d95.d3d12.cache:
+        hash: e7e3cd738edb2426937a4ce8dc3d3e943f164eb6
+        size: 7428
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ParticlesShaderRD/2c975b9f606a53e70d85ecefa151a80fae56cc782297a091e5a51c667179c328/f128cab0b22fb7e0d9f023d6cdb81309be392d95.vulkan.cache:
+        hash: 83fde9d670b80a84c2cd8638a1d3a5805aa16052
+        size: 6224
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ResolveShaderRD/80564ad7b9de936c0082edc6b4c128663eab8fcf050b2c4ff8d4d78b9a9c0e80/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: eb0fdadad0447b5d2290cfaa9efcf5e8d78369e3
+        size: 9408
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ResolveShaderRD/80564ad7b9de936c0082edc6b4c128663eab8fcf050b2c4ff8d4d78b9a9c0e80/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 7e7c017d43314b66199ffa8fd3e7f8676ba50377
+        size: 3892
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SceneForwardClusteredShaderRD/4c5d823bcbd5b17afd644d7811253d1b04c120aad508fa0d2dfcced9cf00daa7/111f8cfd3c260d918df85827eb251dc36a43cb13.d3d12.cache:
+        hash: 0616ff79bf22f2435d69ff1f95af67e506b09839
+        size: 157708
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SceneForwardClusteredShaderRD/4c5d823bcbd5b17afd644d7811253d1b04c120aad508fa0d2dfcced9cf00daa7/111f8cfd3c260d918df85827eb251dc36a43cb13.vulkan.cache:
+        hash: a39e2dfee378189886ad0d0a2f800d6130cea87f
+        size: 102344
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SceneForwardClusteredShaderRD/4c5d823bcbd5b17afd644d7811253d1b04c120aad508fa0d2dfcced9cf00daa7/a38af1e47720abf30ca44f3d3c099c07b046df81.d3d12.cache:
+        hash: 6e734b0eb9d6c06bba4eef19c90126be75c194f5
+        size: 161100
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SceneForwardClusteredShaderRD/4c5d823bcbd5b17afd644d7811253d1b04c120aad508fa0d2dfcced9cf00daa7/a38af1e47720abf30ca44f3d3c099c07b046df81.vulkan.cache:
+        hash: 7c281b410657c2212e66beca9f6f86d8530ed9ca
+        size: 104700
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SceneForwardClusteredShaderRD/4c5d823bcbd5b17afd644d7811253d1b04c120aad508fa0d2dfcced9cf00daa7/ab0b960474f1491b42ef9f2ca13dbd4ccaf64911.d3d12.cache:
+        hash: dbe3794704f0fe00f492a41e5a68f9aa3b802051
+        size: 87356
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SceneForwardClusteredShaderRD/4c5d823bcbd5b17afd644d7811253d1b04c120aad508fa0d2dfcced9cf00daa7/ab0b960474f1491b42ef9f2ca13dbd4ccaf64911.vulkan.cache:
+        hash: 8714238de34717e29338f973d9af79e3ebde6252
+        size: 67424
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ScreenSpaceReflectionFilterShaderRD/59ad606c8326a93d088cb8ad100214514db30cfbf515d80e68a652461922a164/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 81f44a52348991cdee1b8c1c740e99eaa5f59d08
+        size: 11892
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ScreenSpaceReflectionFilterShaderRD/59ad606c8326a93d088cb8ad100214514db30cfbf515d80e68a652461922a164/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: c68e5ebcd493c83e96a5ddb8864ff10bfba82998
+        size: 4372
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ScreenSpaceReflectionScaleShaderRD/86cab1f98693497f3d66ae830fd338a35b08cda4a675e79e35537f824b683ba6/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 52a6ec0df7611e2911b305eb63954a62f2141a64
+        size: 3620
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ScreenSpaceReflectionScaleShaderRD/86cab1f98693497f3d66ae830fd338a35b08cda4a675e79e35537f824b683ba6/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 754af7d38209b84e4b32b3e56fac419ed82b5f69
+        size: 1520
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ScreenSpaceReflectionShaderRD/40d236c30fa83be1809999477e417af6fd8e4e877a11ab09e22462d8b3b46d5d/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 5a1602503c05fadda8c83fbb3a22ccf738cb884e
+        size: 11024
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ScreenSpaceReflectionShaderRD/40d236c30fa83be1809999477e417af6fd8e4e877a11ab09e22462d8b3b46d5d/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: eee6b56a225234edcda23e26cd7f06e41947a344
+        size: 6608
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiDebugProbesShaderRD/b1f8f61e65f08f2ea3f69df88a37676200a0846e4a8258f94aec5deb1239619b/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 18e47caa035fa68ae0e8e339002dca6fa17f3921
+        size: 19308
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiDebugProbesShaderRD/b1f8f61e65f08f2ea3f69df88a37676200a0846e4a8258f94aec5deb1239619b/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: f29c5253edf5decb256cf88ce0e8385c47ee6a34
+        size: 7668
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiDebugShaderRD/074c8fa43ef2bd71bf6c1595db9de7e3182bb138e91efcacac121214f6be80eb/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: cf48c5db7db8fc792170ac23f18ec20eff3bace8
+        size: 4312
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiDebugShaderRD/074c8fa43ef2bd71bf6c1595db9de7e3182bb138e91efcacac121214f6be80eb/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 584ae88afe00e5edae26bd636a92e8766c851083
+        size: 2228
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiDirectLightShaderRD/c3d143416d9c2eb5ed45907bb49e12075c315c9e4db114e8dcbf7f4b975c3406/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 1be148818bc0cb27a52e6aa1f46d52a742d18e06
+        size: 16320
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiDirectLightShaderRD/c3d143416d9c2eb5ed45907bb49e12075c315c9e4db114e8dcbf7f4b975c3406/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: da7cf07ae90a6ade8a28c4b4134b2ea864476c6f
+        size: 9020
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiIntegrateShaderRD/b35908456ade57d11cac2c6db90511bf78a0f86eef91f4f6e80ca8086af3c9d3/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 22eef8847154fcb9b68ad0b71988b21ef20d3ca3
+        size: 23160
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiIntegrateShaderRD/b35908456ade57d11cac2c6db90511bf78a0f86eef91f4f6e80ca8086af3c9d3/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 689309b6c7f3d086d0ecc1e5217c066b78ec082a
+        size: 11620
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiPreprocessShaderRD/65d64685f686ad8b038b412180f3e58f67e97d1e1144cd758ee982f077bbcb79/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: f9e2ad3f369500882d5ef06d555ae016d9e1f003
+        size: 35032
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SdfgiPreprocessShaderRD/65d64685f686ad8b038b412180f3e58f67e97d1e1144cd758ee982f077bbcb79/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: a5d657c5355add88fc98e512b6a75c4c18b290d5
+        size: 14068
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ShadowFrustumShaderRD/370c95f68584a7db974be02b3cadfe95752827cad8cfde318ad58b1e3f4b584f/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: c42e1e7e5bccd63ff9db3b1cd609a6c4101aaf2f
+        size: 2924
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/ShadowFrustumShaderRD/370c95f68584a7db974be02b3cadfe95752827cad8cfde318ad58b1e3f4b584f/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: b5152acfff3aa7c42cd9779b3535d27837e60f50
+        size: 680
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SkeletonShaderRD/d6e394fd4ef33e0a72edf47ffc86d9167c36744212ab892bacced731d4e7c8de/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: ab883cb96e8b32c6e94111e09ca312a49bac10a7
+        size: 9864
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SkeletonShaderRD/d6e394fd4ef33e0a72edf47ffc86d9167c36744212ab892bacced731d4e7c8de/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 16111a9ea1940679a0197622e15a8536406b8b70
+        size: 5040
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SkyShaderRD/5bfbd80e050b2e4dae8bd9db711c00dd31be76f193d5ca493b9516e7fae2c402/03e3b11c69e24394b2d955a8c0ba85587bb70839.d3d12.cache:
+        hash: ac942e8da53ad5bbc0d9dea23d20b3ec41b8e1c4
+        size: 30672
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SkyShaderRD/5bfbd80e050b2e4dae8bd9db711c00dd31be76f193d5ca493b9516e7fae2c402/03e3b11c69e24394b2d955a8c0ba85587bb70839.vulkan.cache:
+        hash: 0814f02aabdac4d4cacf867cf2d3ae975e996539
+        size: 14708
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SkyShaderRD/5bfbd80e050b2e4dae8bd9db711c00dd31be76f193d5ca493b9516e7fae2c402/de678811d1bad3cad4892a8db7b6ea0be197d51d.d3d12.cache:
+        hash: ad7e780592f17b6a236e63325025f19b04d41fd8
+        size: 28808
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SkyShaderRD/5bfbd80e050b2e4dae8bd9db711c00dd31be76f193d5ca493b9516e7fae2c402/de678811d1bad3cad4892a8db7b6ea0be197d51d.vulkan.cache:
+        hash: d0e7763bf7d91fb13fa1287d06393d2910e1cb92
+        size: 14424
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SmaaBlendingShaderRD/be45fef550ed73e5267eb1a06e25a3c5d91cc59514fe99b531ed7c72ef2a53f7/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 9a62706b33f6f543d8f33b52b3f52e9b2f687b8f
+        size: 5284
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SmaaBlendingShaderRD/be45fef550ed73e5267eb1a06e25a3c5d91cc59514fe99b531ed7c72ef2a53f7/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 06bd2a08abe4833dd93a474bb2286672e7156105
+        size: 2008
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SmaaEdgeDetectionShaderRD/1caa616bf2b24d7c61b0bc327e6c3b911526cb42c5b6af1776043f8a83739f90/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 9e39dc41ef4a745e542eb82f4f1ef8eb48e3cb30
+        size: 4672
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SmaaEdgeDetectionShaderRD/1caa616bf2b24d7c61b0bc327e6c3b911526cb42c5b6af1776043f8a83739f90/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: db0d539cd230876ad5ef3630203beb1986153eec
+        size: 1392
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SmaaWeightCalculationShaderRD/d21928af91227ca0e91898bcc780186261f5d9ef977108f9662bff9a577b87d3/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 8ca0403332818cfd6a58d161018fec5c93a8d2ce
+        size: 7824
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SmaaWeightCalculationShaderRD/d21928af91227ca0e91898bcc780186261f5d9ef977108f9662bff9a577b87d3/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: f1c4db5d45138a3bff69c61aefa855c065b1bf0e
+        size: 4480
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SortShaderRD/8d0001e9686e841b0892772a2456299b8b0eaeb0b1c7541fb2aa6aa827618d33/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: fb7ef328b9af924c54134e67b5c8eae4828b483b
+        size: 6404
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SortShaderRD/8d0001e9686e841b0892772a2456299b8b0eaeb0b1c7541fb2aa6aa827618d33/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: f55e7b55d4bffca28531dc7b0d47d30d3c651f1c
+        size: 2984
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SpecularMergeShaderRD/38a44ad0c89c9302458446b3a02d03ee2549d9fc97ba9412dcb2f43fe64a12c1/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 419d3b7ce1109bd1d473ccbb58aca39bdda806a2
+        size: 13604
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SpecularMergeShaderRD/38a44ad0c89c9302458446b3a02d03ee2549d9fc97ba9412dcb2f43fe64a12c1/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: e2bbd5b1f7813b2291b5d51c8bc6534f137444a6
+        size: 3220
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsEffectsDownsampleShaderRD/8dc9bd81e87dafec6238151da0c61bdbc0b974eefcd7097c694a313aecacb32b/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: f5c8892d69d3efdfefc73f7d2ade2510abc52b06
+        size: 20308
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsEffectsDownsampleShaderRD/8dc9bd81e87dafec6238151da0c61bdbc0b974eefcd7097c694a313aecacb32b/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: ad5546ae1c4fb825f98c08cc5ed036a40062a05b
+        size: 9488
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoBlurShaderRD/17dc25d633380086c1f9da58c0fbdd6e7b118d06d4375d0e374b82cccaf83021/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 5817fa077da591e182157cfc15b492c29a4c0b0f
+        size: 7296
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoBlurShaderRD/17dc25d633380086c1f9da58c0fbdd6e7b118d06d4375d0e374b82cccaf83021/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 189e0a71d2d8e15760c48d89cbf1f919e5ebcb50
+        size: 3076
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoImportanceMapShaderRD/99ee15e0c88b6e07b0fdba046e3a02967670e24c441b5a3b62f36dcf18ce1888/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 8e2885042ee22fad757239a51429ccbff347f164
+        size: 7148
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoImportanceMapShaderRD/99ee15e0c88b6e07b0fdba046e3a02967670e24c441b5a3b62f36dcf18ce1888/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 088cfe5cbfcddefa7c1cc9d352d36bd8d685d1af
+        size: 2500
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoInterleaveShaderRD/4f5bd809ca024aa59ee35c0d0fba427f224e9e0b879909675f0e234c426209a2/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 0ba81846bcf3fc866f15f647d22ed55773e52c33
+        size: 7052
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoInterleaveShaderRD/4f5bd809ca024aa59ee35c0d0fba427f224e9e0b879909675f0e234c426209a2/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 5ebb201b28b6088a99e274c34d2273f3f586d47b
+        size: 2668
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoShaderRD/f6a64a85427ab3480a434d331a587b668b827911c02ec1d0a76ff797e3bd821c/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: a1ce1267a6f615a15352c84b52776dc6eb2b8275
+        size: 24720
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsaoShaderRD/f6a64a85427ab3480a434d331a587b668b827911c02ec1d0a76ff797e3bd821c/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 393c7e27ebbf2e1846cf736f46957e3898e5863e
+        size: 14276
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilBlurShaderRD/914e3175d0a0923f0441d15ca3d56f6e70892f75fc938d7063f26485b42dfeea/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: b5d4959aa22e40b5aedcac5a60e69fe139c8b3eb
+        size: 8216
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilBlurShaderRD/914e3175d0a0923f0441d15ca3d56f6e70892f75fc938d7063f26485b42dfeea/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: d6e860d40ea085c75156a60462cc2fdfccca5f60
+        size: 3132
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilImportanceMapShaderRD/13577e83caaf2b12f20257d4a4e0a5392e5da28a1d60ce89f0ba6087b1553a12/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 8996748bf040867bbdfc49fbfcb3f5d32ccde7ab
+        size: 7076
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilImportanceMapShaderRD/13577e83caaf2b12f20257d4a4e0a5392e5da28a1d60ce89f0ba6087b1553a12/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 70f5e1241afe103d66ceb9bbba457a8ab57a50c3
+        size: 2548
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilInterleaveShaderRD/c17bebc0974296a1db6839383c963557cd1db40fb04e52f0d78f56daada7ba16/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: d50aade11effa525e2f7d4ac1c563fd41b1bcc54
+        size: 7756
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilInterleaveShaderRD/c17bebc0974296a1db6839383c963557cd1db40fb04e52f0d78f56daada7ba16/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: e6819bc75bb4ef5c89fa1ef4b30279ae87b1adb1
+        size: 2804
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilShaderRD/19273553dd04782d69f08729359821628476f6f4ef06fa5f47b40c3584eff15b/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 58244481f107b68291351cac28452739ea8d5a08
+        size: 28420
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SsilShaderRD/19273553dd04782d69f08729359821628476f6f4ef06fa5f47b40c3584eff15b/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 089978e08ed58002d0171dbe45284491b2027b7a
+        size: 14096
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SubsurfaceScatteringShaderRD/346874da2fb18e11a28559a4d0ba8091f63d2439f0ff81b918cea77719edfcd8/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: f725dc8b53b1d07c509c41b4ea7d2e0899596c35
+        size: 14428
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/SubsurfaceScatteringShaderRD/346874da2fb18e11a28559a4d0ba8091f63d2439f0ff81b918cea77719edfcd8/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 21d2d8237de536b7f21faee57600d989bf8b57b3
+        size: 5076
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/TaaResolveShaderRD/5c65496ce6ac3f52b37d4b65e4a1fede2f3aeea7b4c6a79c90f6cf374d511be8/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: c27edf6704705d3855f6d1a72a3835b4eac98fd6
+        size: 6276
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/TaaResolveShaderRD/5c65496ce6ac3f52b37d4b65e4a1fede2f3aeea7b4c6a79c90f6cf374d511be8/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 70a8d4c6f39c48afcdce2f94d310a2354c505436
+        size: 3628
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/TonemapShaderRD/bcf12902f02f6746cf510dfdab5d05b5a39e060c3b3cc9750a0dbfe10ac7cfbe/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: f95ceab2a7559eca7fb47b2905a2880f2d636882
+        size: 74120
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/TonemapShaderRD/bcf12902f02f6746cf510dfdab5d05b5a39e060c3b3cc9750a0dbfe10ac7cfbe/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: 144cf8bd675047c4f20c461bcb718873908d6a96
+        size: 30164
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VolumetricFogProcessShaderRD/dad5f5b60750f8c19c650572589377776934448ce3da9bcbf99f081ff873856c/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: b7318e016dc64495d4ffacb4ccc58c791645fca5
+        size: 18180
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VolumetricFogProcessShaderRD/e7f6d37bb922c895af79dcb7b28abe9919540d8e81c61692eda51aae9d52a579/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: e1047e878cb6abc2991437b52343e8ce019b30c5
+        size: 36564
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VolumetricFogShaderRD/776d385c221c8fe202ee78204c95e31c09e1b7a35fddeb238bd0b4bff4224ab7/9a227745af2d65830f930370a9fbba551fbd6f60.vulkan.cache:
+        hash: 74af170affdbcf7897550909e73ef3d5bdc5de56
+        size: 3128
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VolumetricFogShaderRD/9fc8d14b6ee56e7f7beb8d5ea7419ba3d0d51e83b9a61131301ae18250e5bae9/9a227745af2d65830f930370a9fbba551fbd6f60.d3d12.cache:
+        hash: 1d6cef65c7ac99f7fe3d2f1709c7d9670606ea7f
+        size: 5564
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VoxelGiDebugShaderRD/d8efc6eeace9fd412066a05a7d1a63fb7bcd55627354efd4798a75b3c9f9da8b/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 2dd0d4fb12b8fcf79eb6f1466e0d7d9eff291bed
+        size: 19288
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VoxelGiDebugShaderRD/d8efc6eeace9fd412066a05a7d1a63fb7bcd55627354efd4798a75b3c9f9da8b/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: d93f9735a4b3606b651b99737d1f2658c824832c
+        size: 4732
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VoxelGiShaderRD/105bbde43daa99d6779509bf800c6a0c56d1e884cdb53723043b86688dca7864/087916079fba7c625e62b0c2cca570e0fb87c99a.d3d12.cache:
+        hash: 0061af42cb2065ff59dbeb93c1de75f6d0980dc5
+        size: 30320
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/shader_cache/VoxelGiShaderRD/105bbde43daa99d6779509bf800c6a0c56d1e884cdb53723043b86688dca7864/087916079fba7c625e62b0c2cca570e0fb87c99a.vulkan.cache:
+        hash: f5ff5c5b5344a7680da6456fb47e89ac1cc67f36
+        size: 14596
+      /home/henrick/Games/Heroic/Prefixes/default/Slay the spire 2/drive_c/users/steamuser/AppData/Roaming/SlayTheSpire2/vulkan/pipelines.forward_plus.amd_radeon_rx_580_2048sp_(radv_polaris10).cache:
+        hash: 998ba4bc12f10182158211c71d392addea08a34d
+        size: 486288
+    registry:
+      hash: ~
+    children: []

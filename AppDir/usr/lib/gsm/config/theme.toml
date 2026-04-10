@@ -1,0 +1,8 @@
+bg = "#0d0f12"
+fg = "#cdd6f4"
+accent = "#89b4fa"
+panel = "#1e1e2e"
+success = "#a6e3a1"
+error = "#f38ba8"
+font_family = "JetBrains Mono"
+font_size = "11"

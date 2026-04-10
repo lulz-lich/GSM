@@ -1,0 +1,21 @@
+---
+name: Rayman Legends
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:38.181014115Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/Rayman Legends/system.reg:
+        hash: 74394db87abc91a87026390995f8600a7ee74c60
+        size: 4378198
+      /home/henrick/Games/Heroic/Prefixes/default/Rayman Legends/user.reg:
+        hash: d818e9fb54a6b3d8ee0f20a53caf6998310c7471
+        size: 320006
+      /home/henrick/Games/Heroic/Prefixes/default/Rayman Legends/userdef.reg:
+        hash: 55b401e0918bad10921cdb7f1f63f6ad6284b5b1
+        size: 4190
+    registry:
+      hash: ~
+    children: []

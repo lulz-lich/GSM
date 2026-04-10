@@ -1,0 +1,198 @@
+---
+name: "Minecraft: Java Edition"
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:36.626084643Z"
+    os: linux
+    files:
+      /home/henrick/.minecraft/options.txt:
+        hash: e8afbbca5c02fd86e8f567c6ad20752b155245f6
+        size: 4861
+      /home/henrick/.minecraft/saves/gfzinho/DIM-1/data/chunks.dat:
+        hash: cd39ab8b5fe0de831634bcf3658bc711198832ca
+        size: 48
+      /home/henrick/.minecraft/saves/gfzinho/DIM-1/data/raids.dat:
+        hash: 1c421ea71f3833b4d28b40bef52f41e8bac6f87c
+        size: 74
+      /home/henrick/.minecraft/saves/gfzinho/DIM-1/data/world_border.dat:
+        hash: b34b3e5e6970022e7d4452362d9441861f505bf3
+        size: 168
+      /home/henrick/.minecraft/saves/gfzinho/DIM1/data/chunks.dat:
+        hash: cd39ab8b5fe0de831634bcf3658bc711198832ca
+        size: 48
+      /home/henrick/.minecraft/saves/gfzinho/DIM1/data/raids_end.dat:
+        hash: 1c421ea71f3833b4d28b40bef52f41e8bac6f87c
+        size: 74
+      /home/henrick/.minecraft/saves/gfzinho/DIM1/data/world_border.dat:
+        hash: b34b3e5e6970022e7d4452362d9441861f505bf3
+        size: 168
+      /home/henrick/.minecraft/saves/gfzinho/advancements/6a8cf8a9-5189-3dd6-bce1-5c9602bc73a5.json:
+        hash: d6e30f28274723a6c403aa16e8905a811df98f9c
+        size: 29110
+      /home/henrick/.minecraft/saves/gfzinho/advancements/cf95aa42-e8bc-11ef-8cb2-9c6b00470e68.json:
+        hash: 8ef24940b5ee81ebad260cc17d57bf1ce418348a
+        size: 37016
+      /home/henrick/.minecraft/saves/gfzinho/data/chunks.dat:
+        hash: cd39ab8b5fe0de831634bcf3658bc711198832ca
+        size: 48
+      /home/henrick/.minecraft/saves/gfzinho/data/raids.dat:
+        hash: 1c421ea71f3833b4d28b40bef52f41e8bac6f87c
+        size: 74
+      /home/henrick/.minecraft/saves/gfzinho/data/random_sequences.dat:
+        hash: c2cd5f489b815118b28605557883d7514fc02f4f
+        size: 1767
+      /home/henrick/.minecraft/saves/gfzinho/data/scoreboard.dat:
+        hash: cd39ab8b5fe0de831634bcf3658bc711198832ca
+        size: 48
+      /home/henrick/.minecraft/saves/gfzinho/data/stopwatches.dat:
+        hash: e57af0d28fe5400177c16d44a9737a89edddefb8
+        size: 64
+      /home/henrick/.minecraft/saves/gfzinho/data/world_border.dat:
+        hash: b34b3e5e6970022e7d4452362d9441861f505bf3
+        size: 168
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.-1.-1.mca:
+        hash: 0b73e80b683b1578a0f97ddc690656962c7a1f4c
+        size: 36864
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.-1.0.mca:
+        hash: ebe2ac062a799376c7839a044fe82789b024be5a
+        size: 614400
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.-1.1.mca:
+        hash: 10365286971345decea540894d6dae14c32f2fac
+        size: 147456
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.-2.-1.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.-2.0.mca:
+        hash: c4c5ac7b64093499a19e611e88e38b9770a121f2
+        size: 90112
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.-2.1.mca:
+        hash: da5c5761afdd81abf7875b2f4fb31f8697903c9e
+        size: 307200
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.0.-1.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.0.0.mca:
+        hash: 2d0c7a813ec4f8632046a9bfbdadb5fb4177f596
+        size: 61440
+      /home/henrick/.minecraft/saves/gfzinho/entities/r.0.1.mca:
+        hash: 53cd75463915ce643c8108379d52c74c11749258
+        size: 20480
+      /home/henrick/.minecraft/saves/gfzinho/icon.png:
+        hash: 563d178e1fbaee7705778806e614858defde9914
+        size: 10668
+      /home/henrick/.minecraft/saves/gfzinho/level.dat:
+        hash: 5265e931373fe830a45ca685a07904fcd57370b9
+        size: 4560
+      /home/henrick/.minecraft/saves/gfzinho/level.dat_old:
+        hash: 49d878953fdcbff523abf26e1b912443b508e907
+        size: 4637
+      /home/henrick/.minecraft/saves/gfzinho/playerdata/6a8cf8a9-5189-3dd6-bce1-5c9602bc73a5.dat:
+        hash: b6ceafe52d9c79bcf4251cdb986d0cbedb8ffa4b
+        size: 3232
+      /home/henrick/.minecraft/saves/gfzinho/playerdata/6a8cf8a9-5189-3dd6-bce1-5c9602bc73a5.dat_old:
+        hash: 15a5192dd7875fc8395844596fe057285ce724dc
+        size: 2952
+      /home/henrick/.minecraft/saves/gfzinho/playerdata/cf95aa42-e8bc-11ef-8cb2-9c6b00470e68.dat:
+        hash: d85138ab698d40ea158f8ebef90154e3ff39d043
+        size: 3168
+      /home/henrick/.minecraft/saves/gfzinho/playerdata/cf95aa42-e8bc-11ef-8cb2-9c6b00470e68.dat_old:
+        hash: 929de8f2f8eabf3f5cf9b66820d8cb00f268c79c
+        size: 3246
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-1.-1.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-1.0.mca:
+        hash: f43d5855cc359d476469f9c552220439ef646e77
+        size: 73728
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-1.1.mca:
+        hash: 4114b7c9301540eef2de6622d7b809211570edf0
+        size: 49152
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-1.2.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-2.-1.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-2.0.mca:
+        hash: 16e7a16d30831a317cb624acb788ff7dd6360abe
+        size: 12288
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-2.1.mca:
+        hash: 33e65ba8df982dd10a487f2f52583c559544e249
+        size: 20480
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-2.2.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-3.0.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-3.1.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.-3.2.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.0.-1.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.0.0.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/poi/r.0.1.mca:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-1.-1.mca:
+        hash: 60759285c308bb168dcb65a1423d58b54306ac77
+        size: 3805184
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-1.0.mca:
+        hash: 97274a074b42c76a7796eb9bcdb336c21a4eee85
+        size: 9187328
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-1.1.mca:
+        hash: ee1c95aef402cbad862639a3ee623ec825cc19c0
+        size: 5750784
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-1.2.mca:
+        hash: 4cfefc693ee6ecf8d46317468a8e17c73914b0d1
+        size: 176128
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-2.-1.mca:
+        hash: fefba860512a3558428bf92347cf4f696968d41f
+        size: 1445888
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-2.0.mca:
+        hash: 0116c2389fc0f7160f99767bf2e10cf1de8d1d2e
+        size: 5869568
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-2.1.mca:
+        hash: d0d6d465201e96f4de3adbc477157f88d3d09e2d
+        size: 6230016
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-2.2.mca:
+        hash: d0b3b5a30a838daa5050c4294fdedf703ff3e194
+        size: 274432
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-3.0.mca:
+        hash: 5090380a74f6b055549dda3785340e02a5e617b8
+        size: 77824
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-3.1.mca:
+        hash: 29981c616ddb19a05c90e1c975b729794edd69c2
+        size: 139264
+      /home/henrick/.minecraft/saves/gfzinho/region/r.-3.2.mca:
+        hash: 520b29427bdbdde77e272b36762cc7938d52a75d
+        size: 16384
+      /home/henrick/.minecraft/saves/gfzinho/region/r.0.-1.mca:
+        hash: 5748287557f055e55cbbb0400a277e44fe16d03a
+        size: 2043904
+      /home/henrick/.minecraft/saves/gfzinho/region/r.0.0.mca:
+        hash: ab6c3a9d61889b0a54356c2f2267180f2d353873
+        size: 4186112
+      /home/henrick/.minecraft/saves/gfzinho/region/r.0.1.mca:
+        hash: a598d0da1273bb7092f439b42725f0246968792f
+        size: 1687552
+      /home/henrick/.minecraft/saves/gfzinho/session.lock:
+        hash: 2686137311c038a99622242fdb662b88c221c08d
+        size: 3
+      /home/henrick/.minecraft/saves/gfzinho/stats/6a8cf8a9-5189-3dd6-bce1-5c9602bc73a5.json:
+        hash: 6aa9603d01dca0774cc9ed2ddc344f69beb0487e
+        size: 4579
+      /home/henrick/.minecraft/saves/gfzinho/stats/cf95aa42-e8bc-11ef-8cb2-9c6b00470e68.json:
+        hash: 8541bdd5ba6c8d5525c48775e56c8d1bebc06132
+        size: 4834
+    registry:
+      hash: ~
+    children: []

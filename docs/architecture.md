@@ -1,26 +1,33 @@
 # GSM Architecture
 
-GSM is split into three user-facing entry points:
+GSM (Game Save Manager) is a cross-platform tool designed to safely manage game save backups across Linux and Windows.
 
-- `gsm_cli.sh` for scripting and automation
-- `gsm_tui.sh` for terminal interaction
-- `gsm_gui.py` for GTK desktop interaction
+The system is built around a simple but robust model:
 
-## Core flow
+- Save detection (Ludusavi)
+- Versioned backup creation
+- Cloud storage (Rclone)
+- Local backup library
+- Explicit restore operations
 
-1. load user config
-2. optionally check for game-like running processes
-3. use Ludusavi to detect and collect save data
-4. allow manual fallback if enabled or requested
-5. create per-game tar.gz archives
-6. generate SHA256 files
-7. upload archives to the configured Rclone remote
-8. clean old local backups according to retention policy
+---
 
-## Remote organization
+## Core Design Principles
 
-Each game gets its own folder on the cloud remote:
+1. No destructive sync operations
+2. Backups are immutable versions
+3. Cloud is treated as a backup library, not a mirror
+4. Restore is always explicit
+5. Cross-platform compatibility is preserved
 
+---
+
+## System Components
+
+### 1. Detection Layer
+
+Uses Ludusavi to detect game save locations.
+
+Output:
 ```text
-remote_root/GameName/GameName_timestamp.tar.gz
-```
+Temporary directory containing per-game save folders

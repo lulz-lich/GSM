@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APPDIR="$(cd "$(dirname "$0")/.." && pwd)"
+PROJECT_DIR="$APPDIR/lib/gsm"
+
+cd "$PROJECT_DIR"
+exec "$PROJECT_DIR/src/gsm_gui.py"

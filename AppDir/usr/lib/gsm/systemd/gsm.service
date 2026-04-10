@@ -1,0 +1,7 @@
+[Unit]
+Description=GSM automatic backup service
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/gsm
+ExecStart=%h/gsm/src/gsm_cli.sh backup

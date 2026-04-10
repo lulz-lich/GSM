@@ -1,0 +1,226 @@
+[00:00:00]: 
+System Memory:
+	Memory Load: 18%
+	Available Physical Memory: 16246m/19954m
+	Available Page File: 24195m/28965m
+	Available Virtual Memory: 134217670m/134217727m
+	Available Extended Virtual Memory: 0m
+[00:00:00]: 
+Process Memory:
+	Peak Working Set Size: 151m
+	Working Set Size: 150m
+	Quota Peak Page Pool Usage: 0k
+	Quota Page Pool Usage: 0k
+	Quota Peak Non Paged Pool Usage:0k
+	Quota Non Paged Pool Usage: 0k
+	Page File Usage: 28m
+	Peak Page File Usage: 28m
+[00:00:00]: PersistRootStorage is now APP:Klei//DoNotStarveTogether/ 
+[00:00:00]: Starting Up
+[00:00:00]: Version: 705416
+[00:00:00]: Current time: Tue Mar 31 16:39:42 2026
+
+[00:00:00]: Don't Starve Together: 705416 WIN32_STEAM
+[00:00:00]: Build Date: 3856
+[00:00:00]: Mode: 64-bit
+[00:00:00]: Parsing command line
+[00:00:00]: Command Line Arguments: 
+[00:00:00]: Initializing distribution platform
+[00:00:00]: Initializing Minidump handler
+[00:00:00]: ....Done
+[00:00:00]: Steam AppBuildID: 10
+[00:00:00]: Steam BetaName(Branch): [public]
+[00:00:00]: ....Done
+[00:00:00]: PersistUserStorage is now APP:Klei//DoNotStarveTogether/1939416160/ 
+[00:00:00]: Fixing DPI
+[00:00:00]: ...Done
+[00:00:00]: THREAD - started 'GAClient' (328)
+[00:00:00]: CurlRequestManager::ClientThread::Main()
+[00:00:00]: ProfileIndex:3.31
+[00:00:01]: Mounting file system databundles/klump.zip successful.
+[00:00:01]: Mounting file system databundles/shaders.zip successful.
+[00:00:01]: Mounting file system databundles/fonts.zip successful.
+[00:00:01]: Mounting file system databundles/anim_dynamic.zip successful.
+[00:00:01]: Mounting file system databundles/bigportraits.zip successful.
+[00:00:01]: Mounting file system databundles/images.zip successful.
+[00:00:01]: Mounting file system databundles/scripts.zip successful.
+[00:00:01]: THREAD - started 'IC' (368)
+[00:00:01]: Texture Streaming: ENABLED
+[00:00:01]: Small Textures: DISABLED
+[00:00:01]: Threaded Renderer: ENABLED
+[00:00:01]: THREAD - started 'SimUpdateThread' (372)
+[00:00:01]: THREAD - started 'RenderThread' (376)
+[00:00:02]: [Connect] PendingConnection::Reset(true)
+[00:00:02]: Platform: 1
+[00:00:02]: Network tick rate: U=15(2), D=0
+[00:00:02]: Authorized application S:\Games\Don't Starve Together\bin64\dontstarve_steam_x64.exe is disabled in the firewall.
+[00:00:02]: Authorized application S:\Games\Don't Starve Together\bin64\dontstarve_steam_x64.exe is now enabled in the firewall.
+[00:00:02]: THREAD - started 'StreamInput' (380)
+[00:00:02]: could not load ping_cache
+[00:00:02]: Offline user ID: OU_76561199899681888
+[00:00:02]: SteamID: 76561199899681888
+[00:00:02]: Checked cloud IDs - success: TRUE - 0
+[00:00:02]: HardwareStats:
+  OS                        
+    name                      Microsoft Windows 10 Pro
+    version                   10.0.19045
+    platformSpecific          SP 0.0
+    architecture              64-bit
+  CPU                       
+    clockSpeed                3600
+    name                      Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz
+    manufacturer              GenuineIntel
+    numCores                  4
+    features                  SSE,SSE2,SSE3,SSSE3,SSE41,SSE42,AVX
+  RAM                       
+    megsOfRam                 19954
+  GPU                       
+    megsOfRam                 4095
+    videoModeDescription      1366 x 768 x 4294967296 colors
+    name                      AMD Radeon RX 580 2048SP (RADV POLARIS10)
+    driverVersion             35.0.99999.9999
+    driverDate                20250831000000.000000-000
+    refreshRate               0
+
+[00:00:02]: cGame::InitializeOnMainThread
+[00:00:02]: WindowManager::Initialize
+[00:00:02]: CreateWindow: Requesting 1280,720 - 5/6/5 - -1/-1/-1 - 0
+[00:00:02]: THREAD - started 'AsynTextureLoadthread' (384)
+[00:00:02]: THREAD - started 'AsynTextureLoadthread' (388)
+[00:00:02]: CreateEGLContext: 16 configs found
+[00:00:02]:      0: 8/8/8 -  0/ 0/ 0 - 0
+[00:00:02]:      1: 8/8/8 -  0/16/ 0 - 0
+[00:00:02]:      2: 8/8/8 -  0/24/ 0 - 0
+[00:00:02]:      3: 8/8/8 -  0/24/ 8 - 0
+[00:00:02]:      4: 5/5/5 -  0/ 0/ 0 - 0
+[00:00:02]:      5: 5/5/5 -  1/ 0/ 0 - 0
+[00:00:02]:      6: 5/5/5 -  0/16/ 0 - 0
+[00:00:02]:      7: 5/5/5 -  1/16/ 0 - 0
+[00:00:02]:      8: 5/5/5 -  0/24/ 0 - 0
+[00:00:02]:      9: 5/5/5 -  1/24/ 0 - 0
+[00:00:02]:     10: 5/5/5 -  0/24/ 8 - 0
+[00:00:02]:     11: 5/5/5 -  1/24/ 8 - 0
+[00:00:02]:     12: 8/8/8 -  8/ 0/ 0 - 0
+[00:00:02]:     13: 8/8/8 -  8/16/ 0 - 0
+[00:00:02]:     14: 8/8/8 -  8/24/ 0 - 0
+[00:00:02]:     15: 8/8/8 -  8/24/ 8 - 0
+[00:00:02]: GLInfo
+[00:00:02]: ~~~~~~
+[00:00:02]: GL_VENDOR: Google Inc.
+[00:00:02]: GL_RENDERER: ANGLE (AMD Radeon RX 580 2048SP (RADV POLARIS10))
+[00:00:02]: GL_VERSION: OpenGL ES 2.0 (ANGLE 1.0.0.2249)
+[00:00:02]: GL_SHADING_LANGUAGE_VERSION: OpenGL ES GLSL ES 1.00 (ANGLE 1.0.0.2249)
+[00:00:02]: OpenGL extensions (19, 19):
+[00:00:02]: GL_ANGLE_depth_texture
+[00:00:02]: GL_ANGLE_framebuffer_blit
+[00:00:02]: GL_ANGLE_framebuffer_multisample
+[00:00:02]: GL_ANGLE_instanced_arrays
+[00:00:02]: GL_ANGLE_pack_reverse_row_order
+[00:00:02]: GL_ANGLE_texture_compression_dxt3
+[00:00:02]: GL_ANGLE_texture_compression_dxt5
+[00:00:02]: THREAD - started 'WindowsInputManager' (444)
+[00:00:02]: GL_ANGLE_texture_usage
+[00:00:02]: GL_ANGLE_translated_shader_source
+[00:00:02]: GL_EXT_read_format_bgra
+[00:00:02]: GL_EXT_robustness
+[00:00:02]: GL_EXT_texture_compression_dxt1
+[00:00:02]: GL_EXT_texture_format_BGRA8888
+[00:00:02]: GL_EXT_texture_storage
+[00:00:02]: GL_OES_get_program_binary
+[00:00:02]: GL_OES_packed_depth_stencil
+[00:00:02]: GL_OES_rgb8_rgba8
+[00:00:02]: GL_OES_standard_derivatives
+[00:00:02]: GL_OES_texture_npot
+[00:00:02]: GL_MAX_TEXTURE_SIZE = 16384
+[00:00:02]: GL_MAX_TEXTURE_IMAGE_UNITS = 16
+[00:00:02]: GL_MAX_RENDERBUFFER_SIZE = 16384
+[00:00:02]: GL_MAX_VIEWPORT_DIMS = 16384, 16384
+[00:00:02]: GL_MAX_VARYING_VECTORS = 10
+[00:00:02]: GL_MAX_VERTEX_ATTRIBS = 16
+[00:00:02]: GL_MAX_VERTEX_UNIFORM_VECTORS = 254
+[00:00:02]: GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS = 4
+[00:00:02]: GL_MAX_FRAGMENT_UNIFORM_VECTORS = 221
+[00:00:02]: 4 compressed texture formats
+[00:00:02]: texture format 0x83f0
+[00:00:02]: texture format 0x83f1
+[00:00:02]: texture format 0x83f2
+[00:00:02]: texture format 0x83f3
+[00:00:02]: Renderer initialize: Okay
+[00:00:02]: AnimManager initialize: Okay
+[00:00:03]: Buffers initialize: Okay
+[00:00:03]: cDontStarveGame::DoGameSpecificInitialize()
+[00:00:03]: GameSpecific initialize: Okay
+[00:00:03]: cGame::StartPlaying
+[00:00:03]: AppVersion::GetArchitecture() x64
+[00:00:03]: LOADING LUA
+[00:00:03]: DoLuaFile scripts/main.lua
+[00:00:03]: DoLuaFile loading buffer scripts/main.lua
+[00:00:06]:   taskgrouplist:	default	Together	
+[00:00:06]:   taskgrouplist:	classic	Classic	
+[00:00:06]:   taskgrouplist:	cave_default	Underground	
+[00:00:06]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:00:06]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:00:06]: Running main.lua
+	
+[00:00:06]: Could not load modindex	
+[00:00:06]: ModIndex: Beginning normal load sequence.
+	
+[00:00:06]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:06]: Failed to load skilltree file itself!	
+[00:00:06]: Trying to apply online cache of skilltree data..	
+[00:00:06]: Which also failed. This error is unrecoverable. Skill tree will be cleared.	
+[00:00:22]: LOADING LUA SUCCESS
+[00:00:22]: PlayerDeaths could not load morgue	
+[00:00:22]: PlayerHistory could not load player_history	
+[00:00:22]: ServerPreferences could not load server_preferences	
+[00:00:22]: ConsoleScreenSettings could not load consolescreen	
+[00:00:22]: bloom_enabled	true	
+[00:00:22]: EnableShadeRenderer: 	true	
+[00:00:22]: OnFilesLoaded()	
+[00:00:22]: OnUpdatePurchaseStateComplete	
+[00:00:22]: Klump load on boot started.	
+[00:00:22]: Klump files loaded: 	0	
+[00:00:25]: 	Load FE	
+[00:00:29]: 	Load FE: done	
+[00:00:29]: THREAD - started 'FilesExistAsyncThread' (480)
+[00:00:29]: FilesExistAsyncThread started (28216 files)...
+[00:00:29]: OnLoadPermissionList: APP:Klei//DoNotStarveTogether/1939416160/client_save/blocklist.txt (Failure)
+[00:00:29]: OnLoadPermissionList: APP:Klei//DoNotStarveTogether/1939416160/client_save/adminlist.txt (Failure)
+[00:00:29]: OnLoadUserIdList: APP:Klei//DoNotStarveTogether/1939416160/client_save/whitelist.txt (Failure)
+[00:00:29]: [MOTD] Downloading info from	https://motd.klei.com/motd.json/?game=dst&platform=STEAM&locale=US&lang=english&version=705416	
+[00:00:29]: Check for write access: TRUE
+[00:00:29]: Check for read access: TRUE
+[00:00:29]: Available disk space for save files: 79857 MB
+[00:00:29]: Reset() returning
+[00:00:30]: [MOTD] Done Loading.	
+[00:00:30]: [MOTD] Downloading image for box8 from https://klei-motd.klei.com/dst/yotck/steam/en/yotckmotd_69bfd.tex
+[00:00:30]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box8.tex
+[00:00:30]: [MOTD] Downloading image for box4 from https://klei-motd.klei.com/dst/yotck/steam/en/yotckskinsmotd_ce06f.tex
+[00:00:30]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box4.tex
+[00:00:30]: [MOTD] Downloading image for box7 from https://klei-motd.klei.com/dst/yotck/steam/en/discord_776e2.tex
+[00:00:30]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box7.tex
+[00:00:30]: [MOTD] Downloading image for box5 from https://klei-motd.klei.com/dst/yotck/steam/en/RWmotd_a82e8.tex
+[00:00:31]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box5.tex
+[00:00:32]: Do AutoLogin	
+[00:00:32]: [Connect] PendingConnection::Reset(true)
+[00:00:32]: ModIndex: Load sequence finished successfully.	
+[00:00:50]: Getting top mod details...
+[00:00:50]: Frontend-Unloading mod 'all'.	
+[00:00:50]: GOT top mod details...0
+[00:01:04]: [Workshop] CancelDownloads for all pending downloads
+[00:01:04]: Collecting garbage...
+[00:01:04]: lua_gc took 0.08 seconds
+[00:01:04]: ~ShardLuaProxy()
+[00:01:04]: ~cEventLeaderboardProxy()
+[00:01:04]: ~ItemServerLuaProxy()
+[00:01:04]: ~InventoryLuaProxy()
+[00:01:04]: ~NetworkLuaProxy()
+[00:01:04]: ~SimLuaProxy()
+[00:01:04]: [Workshop] CancelDownloads for all pending downloads
+[00:01:04]: FilesExistAsyncThread aborted.
+[00:01:04]: ... FilesExistAsyncThread complete
+[00:01:04]: lua_close took 0.09 seconds
+[00:01:05]: [Workshop] CancelDownloads for all pending downloads
+[00:01:05]: CurlRequestManager::ClientThread::Main() complete
+[00:01:05]: HttpClient2 discarded 0 callbacks.
+[00:01:05]: Shutting down

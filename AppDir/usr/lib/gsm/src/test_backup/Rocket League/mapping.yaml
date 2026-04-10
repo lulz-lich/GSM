@@ -1,0 +1,27 @@
+---
+name: Rocket League
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:38.526331080Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/Rocket League/drive_c/users/steamuser/Documents/My Games/Rocket League/TAGame/Config/TAInput.ini:
+        hash: fe6851ffb48aa68518fe54e9b25dc6d75c6caa60
+        size: 125598
+      /home/henrick/Games/Heroic/Prefixes/default/Rocket League/drive_c/users/steamuser/Documents/My Games/Rocket League/TAGame/Config/TARLBot.ini:
+        hash: 50f7895b06a350a33de9a725080299fde18f976d
+        size: 130
+      /home/henrick/Games/Heroic/Prefixes/default/Rocket League/drive_c/users/steamuser/Documents/My Games/Rocket League/TAGame/Config/TASystemSettings.ini:
+        hash: 19386ef01b9fb63cfbba0dc16413ebe7fa6295bf
+        size: 31591
+      /home/henrick/Games/Heroic/Prefixes/default/Rocket League/drive_c/users/steamuser/Documents/My Games/Rocket League/TAGame/SaveDataEpic/DBE_Production/723c569be3114f399999b5a9c9668fe7.save:
+        hash: 82f9a86fbf3421de290e530f474979f6e181a933
+        size: 1002440
+      /home/henrick/Games/Heroic/Prefixes/default/Rocket League/drive_c/users/steamuser/Documents/My Games/Rocket League/TAGame/SaveDataEpic/DBE_Production/723c569be3114f399999b5a9c9668fe7_2.save:
+        hash: 82f9a86fbf3421de290e530f474979f6e181a933
+        size: 1002440
+    registry:
+      hash: ~
+    children: []
