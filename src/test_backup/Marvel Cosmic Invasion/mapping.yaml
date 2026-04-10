@@ -1,0 +1,15 @@
+---
+name: Marvel Cosmic Invasion
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:36.297769007Z"
+    os: linux
+    files:
+      /home/henrick/.local/share/GSE Saves/settings/configs.user.ini:
+        hash: bf70096007799d9f524137d26bb01dc860ddf6e1
+        size: 409
+    registry:
+      hash: ~
+    children: []

@@ -1,5 +1,5 @@
 [Unit]
-Description=Run GSM backup every hour from 07:00 to 12:00
+Description=Run GSM automatic backup on schedule
 
 [Timer]
 OnCalendar=*-*-* 07..12:00

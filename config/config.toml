@@ -2,9 +2,11 @@ backup_dir = "~/game-backups"
 temp_dir = "~/.cache/gsm/tmp"
 restore_dir = "~/.cache/gsm/restore"
 log_file = "~/.local/state/gsm/gsm.log"
-remote = "saves:/game-backups"
+
+remote = "onedrive:/game-backups"
+
 retention_days = 30
 max_backups_per_game = 7
+
 check_running_processes = true
 running_process_patterns = "steam|wine|gamescope|\\.exe"
-schedule = "*-*-* 07..12:00"

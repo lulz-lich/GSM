@@ -1,0 +1,39 @@
+---
+name: "Don't Starve Together"
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:38.877334087Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/1939416160/client.ini:
+        hash: 445890d7ffb150065e8ce5d20629907b96040029
+        size: 237
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/1939416160/client_save/boot_modindex:
+        hash: 19fd9ecae280a2cd6e379203be11b40c9c9553d5
+        size: 15
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/1939416160/client_save/loadingtips:
+        hash: 7763786ae5c04175ba8b0ac9ecbb790e485e1127
+        size: 51
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/1939416160/client_save/modindex:
+        hash: 18533d972602223a2737d241054647b5c9ae1768
+        size: 139
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/1939416160/client_save/motd_info:
+        hash: f04e9d9a5225ca7d58d90b54bb3d7354ecb40f8d
+        size: 943
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/1939416160/client_save/profile:
+        hash: 21a0cb1ead633e112a50621f5570e202d46f62a1
+        size: 639
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/1939416160/client_save/shardsaveindex:
+        hash: 77b1640bbf0f342939e4d9e7d5462cfa085b2b0c
+        size: 31
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/client_chat_log.txt:
+        hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+        size: 0
+      /home/henrick/Games/Heroic/Prefixes/default/dont starve together/drive_c/users/steamuser/Documents/Klei/DoNotStarveTogether/client_log.txt:
+        hash: 9267d965b19245daff4cda2c872d4a398b7ef2e9
+        size: 10627
+    registry:
+      hash: ~
+    children: []

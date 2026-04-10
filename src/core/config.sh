@@ -13,30 +13,6 @@ expand_path() {
     echo "${path/#\~/$HOME}"
 }
 
-set_config() {
-    local key="$1"
-    local value="$2"
-    local file="$3"
-
-    if grep -qE "^${key}[[:space:]]*=" "$file"; then
-        sed -i "s|^${key}[[:space:]]*=.*|${key} = \"${value}\"|" "$file"
-    else
-        echo "${key} = \"${value}\"" >> "$file"
-    fi
-}
-
-set_config_raw() {
-    local key="$1"
-    local value="$2"
-    local file="$3"
-
-    if grep -qE "^${key}[[:space:]]*=" "$file"; then
-        sed -i "s|^${key}[[:space:]]*=.*|${key} = ${value}|" "$file"
-    else
-        echo "${key} = ${value}" >> "$file"
-    fi
-}
-
 if [ ! -f "$CONFIG_FILE" ]; then
     echo "GSM config not found: $CONFIG_FILE"
     exit 1
@@ -51,7 +27,11 @@ RETENTION_DAYS="$(read_config retention_days "$CONFIG_FILE")"
 MAX_BACKUPS_PER_GAME="$(read_config max_backups_per_game "$CONFIG_FILE")"
 CHECK_RUNNING_PROCESSES="$(read_config check_running_processes "$CONFIG_FILE")"
 RUNNING_PROCESS_PATTERNS="$(read_config running_process_patterns "$CONFIG_FILE")"
-SCHEDULE="$(read_config schedule "$CONFIG_FILE")"
+
+RETENTION_DAYS="${RETENTION_DAYS:-30}"
+MAX_BACKUPS_PER_GAME="${MAX_BACKUPS_PER_GAME:-7}"
+CHECK_RUNNING_PROCESSES="${CHECK_RUNNING_PROCESSES:-true}"
+RUNNING_PROCESS_PATTERNS="${RUNNING_PROCESS_PATTERNS:-steam|wine|gamescope|\\.exe}"
 
 mkdir -p "$BACKUP_DIR"
 mkdir -p "$TEMP_DIR"

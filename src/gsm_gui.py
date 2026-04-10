@@ -11,9 +11,7 @@ from gi.repository import Gtk, GLib, Gdk
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CLI = os.path.join(BASE_DIR, "gsm_cli.sh")
 BACKUP_DIR = os.path.expanduser("~/game-backups")
-CONFIG_FILE = os.path.expanduser("~/.config/gsm/config.toml")
 TEMP_DETECT_DIR = "/tmp/gsm_detect_gui"
-TEMP_RESTORE_DIR = "/tmp/gsm_restore_gui"
 
 CSS = b"""
 window {
@@ -21,13 +19,6 @@ window {
     color: #cdd6f4;
     font-family: JetBrains Mono, monospace;
     font-size: 11pt;
-}
-
-headerbar {
-    background: #181825;
-    color: #cdd6f4;
-    border: none;
-    box-shadow: none;
 }
 
 label {
@@ -98,14 +89,6 @@ textview, treeview {
     border: 1px solid #313244;
 }
 
-entry {
-    background: #11111b;
-    color: #cdd6f4;
-    border: 1px solid #45475a;
-    border-radius: 8px;
-    padding: 8px;
-}
-
 progressbar trough {
     background: #313244;
     border-radius: 999px;
@@ -119,24 +102,13 @@ progressbar progress {
 }
 """
 
-
-def get_config(key):
-    if not os.path.exists(CONFIG_FILE):
-        return ""
-    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line.startswith(key) and "=" in line:
-                return line.split("=", 1)[1].strip().strip('"')
-    return ""
-
-
 class GSM(Gtk.Window):
     def __init__(self):
         super().__init__(title="GSM")
-        self.set_default_size(1050, 720)
+        self.set_default_size(1100, 760)
         self.set_border_width(16)
         self.running = False
+        self.operation_lock = threading.Lock()
 
         self.apply_css()
 
@@ -195,17 +167,22 @@ class GSM(Gtk.Window):
 
         self.btn_backup = self.make_button("Automatic Backup", self.start_backup, primary=True)
         self.btn_manual = self.make_button("Manual Backup", self.start_manual_backup)
-        self.btn_restore = self.make_button("Restore Selected", self.start_restore_selected)
-        self.btn_sync = self.make_button("Sync", self.start_sync)
+        self.btn_sync = self.make_button("Sync Backup Library", self.start_sync)
+        self.btn_restore_latest = self.make_button("Restore Latest", self.start_restore_latest)
+        self.btn_restore_all = self.make_button("Restore All", self.start_restore_all)
+        self.btn_restore_game = self.make_button("Restore Selected Game", self.start_restore_selected_game)
         self.btn_refresh = self.make_button("Refresh History", self.refresh_history)
-        self.btn_settings = self.make_button("Settings", self.open_settings)
 
-        box.pack_start(self.btn_backup, True, True, 0)
-        box.pack_start(self.btn_manual, True, True, 0)
-        box.pack_start(self.btn_restore, True, True, 0)
-        box.pack_start(self.btn_sync, True, True, 0)
-        box.pack_start(self.btn_refresh, True, True, 0)
-        box.pack_start(self.btn_settings, True, True, 0)
+        for btn in [
+            self.btn_backup,
+            self.btn_manual,
+            self.btn_sync,
+            self.btn_restore_latest,
+            self.btn_restore_all,
+            self.btn_restore_game,
+            self.btn_refresh,
+        ]:
+            box.pack_start(btn, True, True, 0)
 
         return box
 
@@ -239,7 +216,7 @@ class GSM(Gtk.Window):
         right_title.get_style_context().add_class("section-title")
         right_card.pack_start(right_title, False, False, 0)
 
-        info = Gtk.Label(label="Sync downloads cloud archives. Refresh History only reloads the local list.")
+        info = Gtk.Label(label="Select a backup archive to restore a specific game when needed.")
         info.set_xalign(0)
         right_card.pack_start(info, False, False, 0)
 
@@ -256,7 +233,6 @@ class GSM(Gtk.Window):
 
         pane.pack1(left_card, resize=True, shrink=False)
         pane.pack2(right_card, resize=True, shrink=False)
-
         return pane
 
     def build_logs(self):
@@ -290,7 +266,15 @@ class GSM(Gtk.Window):
 
     def set_running(self, state):
         self.running = state
-        for btn in [self.btn_backup, self.btn_manual, self.btn_restore, self.btn_sync, self.btn_refresh, self.btn_settings]:
+        for btn in [
+            self.btn_backup,
+            self.btn_manual,
+            self.btn_sync,
+            self.btn_restore_latest,
+            self.btn_restore_all,
+            self.btn_restore_game,
+            self.btn_refresh,
+        ]:
             GLib.idle_add(btn.set_sensitive, not state)
 
     def log(self, msg):
@@ -344,11 +328,18 @@ class GSM(Gtk.Window):
             self.log(line.rstrip())
         return proc.wait()
 
+    def start_threaded_action(self, target, *args):
+        if self.running:
+            return
+        thread = threading.Thread(target=target, args=args, daemon=True)
+        thread.start()
+
     def start_backup(self, _widget):
-        if not self.running:
-            threading.Thread(target=self.backup_flow, daemon=True).start()
+        self.start_threaded_action(self.backup_flow)
 
     def backup_flow(self):
+        if not self.operation_lock.acquire(blocking=False):
+            return
         self.set_running(True)
         try:
             self.clear_detected()
@@ -392,58 +383,61 @@ class GSM(Gtk.Window):
                 return
 
             self.set_progress(0.9)
-            self.set_status("Refreshing local history...")
             self.refresh_history()
-
             self.set_progress(1.0)
             self.set_status("Backup completed")
         finally:
             self.set_running(False)
+            self.operation_lock.release()
 
     def start_manual_backup(self, _widget):
-        if not self.running:
-            threading.Thread(target=self.manual_backup_flow, daemon=True).start()
+        if self.running:
+            return
 
-    def manual_backup_flow(self):
+        chooser = Gtk.FileChooserDialog(
+            title="Select save folder",
+            parent=self,
+            action=Gtk.FileChooserAction.SELECT_FOLDER
+        )
+        chooser.add_buttons(
+            Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+            Gtk.STOCK_OPEN, Gtk.ResponseType.OK
+        )
+        response = chooser.run()
+        save_path = chooser.get_filename() if response == Gtk.ResponseType.OK else None
+        chooser.destroy()
+
+        if not save_path:
+            self.set_status("Manual backup cancelled")
+            return
+
+        dialog = Gtk.Dialog(title="Game Name", transient_for=self, flags=0)
+        dialog.add_buttons(
+            Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
+            Gtk.STOCK_OK, Gtk.ResponseType.OK
+        )
+
+        content = dialog.get_content_area()
+        entry = Gtk.Entry()
+        entry.set_placeholder_text("Enter game name")
+        content.add(entry)
+        dialog.show_all()
+
+        response = dialog.run()
+        game_name = entry.get_text().strip() if response == Gtk.ResponseType.OK else ""
+        dialog.destroy()
+
+        if not game_name:
+            self.set_status("Manual backup cancelled")
+            return
+
+        self.start_threaded_action(self.manual_backup_flow, save_path, game_name)
+
+    def manual_backup_flow(self, save_path, game_name):
+        if not self.operation_lock.acquire(blocking=False):
+            return
         self.set_running(True)
         try:
-            chooser = Gtk.FileChooserDialog(
-                title="Select save folder",
-                parent=self,
-                action=Gtk.FileChooserAction.SELECT_FOLDER
-            )
-            chooser.add_buttons(
-                Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-                Gtk.STOCK_OPEN, Gtk.ResponseType.OK
-            )
-            response = chooser.run()
-            save_path = chooser.get_filename() if response == Gtk.ResponseType.OK else None
-            chooser.destroy()
-
-            if not save_path:
-                self.set_status("Manual backup cancelled")
-                return
-
-            dialog = Gtk.Dialog(title="Game Name", transient_for=self, flags=0)
-            dialog.add_buttons(
-                Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-                Gtk.STOCK_OK, Gtk.ResponseType.OK
-            )
-
-            content = dialog.get_content_area()
-            entry = Gtk.Entry()
-            entry.set_placeholder_text("Enter game name")
-            content.add(entry)
-            dialog.show_all()
-
-            response = dialog.run()
-            game_name = entry.get_text().strip() if response == Gtk.ResponseType.OK else ""
-            dialog.destroy()
-
-            if not game_name:
-                self.set_status("Manual backup cancelled")
-                return
-
             self.set_status("Running manual backup...")
             self.set_progress(0.3)
 
@@ -454,78 +448,21 @@ class GSM(Gtk.Window):
                 return
 
             self.set_progress(1.0)
-            self.set_status("Manual backup completed")
             self.refresh_history()
+            self.set_status("Manual backup completed")
         finally:
             self.set_running(False)
-
-    def start_restore_selected(self, _widget):
-        if self.running:
-            return
-
-        selection = self.history_view.get_selection()
-        model, treeiter = selection.get_selected()
-
-        if treeiter is None:
-            self.set_status("Select a backup first")
-            return
-
-        filename = model[treeiter][0]
-        threading.Thread(target=self.restore_selected_flow, args=(filename,), daemon=True).start()
-
-    def restore_selected_flow(self, filename):
-        self.set_running(True)
-        try:
-            archive_path = os.path.join(BACKUP_DIR, filename)
-
-            if not os.path.isfile(archive_path):
-                self.set_status("Backup file not found")
-                return
-
-            self.set_status(f"Preparing restore for {filename}...")
-            self.set_progress(0.2)
-
-            if os.path.exists(TEMP_RESTORE_DIR):
-                shutil.rmtree(TEMP_RESTORE_DIR)
-            os.makedirs(TEMP_RESTORE_DIR, exist_ok=True)
-
-            tar_proc = subprocess.run(
-                ["tar", "-xzf", archive_path, "-C", TEMP_RESTORE_DIR],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True
-            )
-
-            if tar_proc.stdout:
-                self.log(tar_proc.stdout.rstrip())
-
-            if tar_proc.returncode != 0:
-                self.set_status("Extraction failed")
-                self.set_progress(0.0)
-                return
-
-            self.set_progress(0.65)
-            self.set_status("Restoring save...")
-            code = self.run_and_log(["ludusavi", "restore", "--path", TEMP_RESTORE_DIR, "--force"])
-
-            if code != 0:
-                self.set_status("Restore failed")
-                self.set_progress(0.0)
-                return
-
-            self.set_progress(1.0)
-            self.set_status("Restore completed")
-        finally:
-            self.set_running(False)
+            self.operation_lock.release()
 
     def start_sync(self, _widget):
-        if not self.running:
-            threading.Thread(target=self.sync_flow, daemon=True).start()
+        self.start_threaded_action(self.sync_flow)
 
     def sync_flow(self):
+        if not self.operation_lock.acquire(blocking=False):
+            return
         self.set_running(True)
         try:
-            self.set_status("Syncing cloud backups to the local backup library...")
+            self.set_status("Syncing backup library from cloud...")
             self.set_progress(0.2)
 
             code = self.run_and_log([CLI, "sync"])
@@ -535,64 +472,87 @@ class GSM(Gtk.Window):
                 return
 
             self.set_progress(1.0)
-            self.set_status("Sync completed")
             self.refresh_history()
+            self.set_status("Sync completed")
         finally:
             self.set_running(False)
+            self.operation_lock.release()
 
-    def open_settings(self, _widget):
-        dialog = Gtk.Dialog(title="Settings", transient_for=self, flags=0)
-        dialog.set_default_size(420, 220)
-        dialog.add_buttons(
-            Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL,
-            Gtk.STOCK_SAVE, Gtk.ResponseType.OK
-        )
+    def start_restore_latest(self, _widget):
+        self.start_threaded_action(self.restore_latest_flow)
 
-        box = dialog.get_content_area()
-        grid = Gtk.Grid(column_spacing=10, row_spacing=10, margin=12)
-        box.add(grid)
+    def restore_latest_flow(self):
+        if not self.operation_lock.acquire(blocking=False):
+            return
+        self.set_running(True)
+        try:
+            self.set_status("Restoring latest backup...")
+            self.set_progress(0.3)
+            code = self.run_and_log([CLI, "restore"])
+            if code != 0:
+                self.set_status("Restore latest failed")
+                self.set_progress(0.0)
+                return
+            self.set_progress(1.0)
+            self.set_status("Restore latest completed")
+        finally:
+            self.set_running(False)
+            self.operation_lock.release()
 
-        remote_entry = Gtk.Entry()
-        remote_entry.set_text(get_config("remote"))
+    def start_restore_all(self, _widget):
+        self.start_threaded_action(self.restore_all_flow)
 
-        max_entry = Gtk.Entry()
-        max_entry.set_text(get_config("max_backups_per_game"))
+    def restore_all_flow(self):
+        if not self.operation_lock.acquire(blocking=False):
+            return
+        self.set_running(True)
+        try:
+            self.set_status("Restoring all backups...")
+            self.set_progress(0.3)
+            code = self.run_and_log([CLI, "restore-all"])
+            if code != 0:
+                self.set_status("Restore all failed")
+                self.set_progress(0.0)
+                return
+            self.set_progress(1.0)
+            self.set_status("Restore all completed")
+        finally:
+            self.set_running(False)
+            self.operation_lock.release()
 
-        schedule_entry = Gtk.Entry()
-        schedule_entry.set_text(get_config("schedule"))
+    def start_restore_selected_game(self, _widget):
+        selection = self.history_view.get_selection()
+        model, treeiter = selection.get_selected()
 
-        grid.attach(Gtk.Label(label="Remote"), 0, 0, 1, 1)
-        grid.attach(remote_entry, 1, 0, 1, 1)
+        if treeiter is None:
+            self.set_status("Select a backup archive first")
+            return
 
-        grid.attach(Gtk.Label(label="Max backups per game"), 0, 1, 1, 1)
-        grid.attach(max_entry, 1, 1, 1, 1)
+        archive_name = model[treeiter][0]
+        if "_" not in archive_name:
+            self.set_status("Could not infer game name from archive")
+            return
 
-        grid.attach(Gtk.Label(label="Schedule"), 0, 2, 1, 1)
-        grid.attach(schedule_entry, 1, 2, 1, 1)
+        game_name = archive_name.rsplit("_", 2)[0]
+        self.start_threaded_action(self.restore_selected_game_flow, game_name)
 
-        hint = Gtk.Label(label='Examples: "*-*-* 22:00" or "*-*-* 07..12:00"')
-        hint.set_xalign(0)
-        grid.attach(hint, 0, 3, 2, 1)
-
-        dialog.show_all()
-        response = dialog.run()
-
-        if response == Gtk.ResponseType.OK:
-            remote = remote_entry.get_text().strip()
-            max_backups = max_entry.get_text().strip()
-            schedule = schedule_entry.get_text().strip()
-
-            if remote:
-                self.run_and_log([CLI, "update-remote", remote])
-            if max_backups:
-                self.run_and_log([CLI, "update-max-backups", max_backups])
-            if schedule:
-                self.run_and_log([CLI, "update-schedule", schedule])
-
-            self.set_status("Settings updated")
-
-        dialog.destroy()
-
+    def restore_selected_game_flow(self, game_name):
+        if not self.operation_lock.acquire(blocking=False):
+            return
+        self.set_running(True)
+        try:
+            self.set_status(f"Restoring latest backup for {game_name}...")
+            self.set_progress(0.3)
+            code = self.run_and_log([CLI, "restore-game", game_name])
+            if code != 0:
+                self.set_status("Restore selected game failed")
+                self.set_progress(0.0)
+                return
+            self.set_progress(1.0)
+            self.set_status(f"Restore for {game_name} completed")
+        finally:
+            self.set_running(False)
+            self.operation_lock.release()
 
 def main():
     if not os.path.exists(CLI):
@@ -606,7 +566,6 @@ def main():
     win.connect("destroy", Gtk.main_quit)
     win.show_all()
     Gtk.main()
-
 
 if __name__ == "__main__":
     main()

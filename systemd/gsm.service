@@ -1,5 +1,5 @@
 [Unit]
-Description=GSM backup service
+Description=GSM automatic backup service
 
 [Service]
 Type=oneshot

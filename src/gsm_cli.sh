@@ -4,10 +4,6 @@ set -euo pipefail
 BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
 source "$BASE_DIR/core/config.sh"
 
-USER_SYSTEMD_DIR="$HOME/.config/systemd/user"
-TIMER_FILE="$USER_SYSTEMD_DIR/gsm.timer"
-SERVICE_FILE="$USER_SYSTEMD_DIR/gsm.service"
-
 log() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
 }
@@ -27,6 +23,11 @@ check_running_games() {
 cleanup_temp() {
     rm -rf "$TEMP_DIR"
     mkdir -p "$TEMP_DIR"
+}
+
+cleanup_restore() {
+    rm -rf "$RESTORE_DIR"
+    mkdir -p "$RESTORE_DIR"
 }
 
 prune_local_game_backups() {
@@ -53,7 +54,7 @@ prune_remote_game_backups() {
     local game_name="$1"
 
     mapfile -t remote_files < <(
-        rclone lsf "$REMOTE/$game_name" --files-only | grep '\.tar\.gz$' | sort
+        rclone lsf "$REMOTE/$game_name" --files-only 2>/dev/null | grep '\.tar\.gz$' | sort || true
     )
 
     local count="${#remote_files[@]}"
@@ -75,12 +76,15 @@ create_archive_for_game() {
     local timestamp="$2"
 
     local archive_file="$BACKUP_DIR/${game_name}_${timestamp}.tar.gz"
+
     tar -czf "$archive_file" -C "$TEMP_DIR" "$game_name"
     sha256sum "$archive_file" > "${archive_file}.sha256"
 
     log "Uploading $game_name..."
-    rclone copy "$archive_file" "$REMOTE/$game_name/"
-    rclone copy "${archive_file}.sha256" "$REMOTE/$game_name/"
+    rclone copy "$archive_file" "$REMOTE/$game_name/" -P
+    if [ -f "${archive_file}.sha256" ]; then
+        rclone copy "${archive_file}.sha256" "$REMOTE/$game_name/" -P
+    fi
 
     prune_local_game_backups "$game_name"
     prune_remote_game_backups "$game_name"
@@ -134,9 +138,15 @@ backup_manual() {
     log "Manual backup completed"
 }
 
+sync_library() {
+    log "Syncing backup library from cloud..."
+    mkdir -p "$BACKUP_DIR"
+    rclone copy "$REMOTE" "$BACKUP_DIR" -P
+    log "Backup library sync completed"
+}
+
 restore_latest() {
-    log "Syncing cloud backups to local directory"
-    rclone sync "$REMOTE" "$BACKUP_DIR"
+    sync_library
 
     local latest_archive
     latest_archive="$(find "$BACKUP_DIR" -type f -name '*.tar.gz' | sort | tail -n1)"
@@ -146,13 +156,64 @@ restore_latest() {
         exit 1
     fi
 
-    rm -rf "$RESTORE_DIR"
-    mkdir -p "$RESTORE_DIR"
-
+    cleanup_restore
     tar -xzf "$latest_archive" -C "$RESTORE_DIR"
-    log "Restoring from $latest_archive"
+
+    log "Restoring from latest archive: $latest_archive"
     ludusavi restore --path "$RESTORE_DIR" --force
-    log "Restore completed"
+    log "Restore latest completed"
+}
+
+restore_all() {
+    sync_library
+    cleanup_restore
+
+    shopt -s nullglob
+    local found=0
+    for archive in "$BACKUP_DIR"/*.tar.gz; do
+        found=1
+        tar -xzf "$archive" -C "$RESTORE_DIR"
+    done
+    shopt -u nullglob
+
+    if [ "$found" -eq 0 ]; then
+        log "No local archives found to restore"
+        exit 1
+    fi
+
+    log "Restoring all extracted backups..."
+    ludusavi restore --path "$RESTORE_DIR" --force
+    log "Restore all completed"
+}
+
+restore_game_latest() {
+    local game_name="${1:-}"
+
+    if [ -z "$game_name" ]; then
+        log "restore-game requires a game name"
+        exit 1
+    fi
+
+    sync_library
+
+    local latest_archive
+    latest_archive="$(find "$BACKUP_DIR" -maxdepth 1 -type f -name "${game_name}_*.tar.gz" | sort | tail -n1)"
+
+    if [ -z "$latest_archive" ]; then
+        log "No backup found for game: $game_name"
+        exit 1
+    fi
+
+    cleanup_restore
+    tar -xzf "$latest_archive" -C "$RESTORE_DIR"
+
+    log "Restoring latest backup for $game_name from $latest_archive"
+    ludusavi restore --path "$RESTORE_DIR" --force
+    log "Restore game completed"
+}
+
+refresh_history() {
+    find "$BACKUP_DIR" -maxdepth 1 -type f -name '*.tar.gz' | sort
 }
 
 restore_file() {
@@ -163,87 +224,12 @@ restore_file() {
         exit 1
     fi
 
-    rm -rf "$RESTORE_DIR"
-    mkdir -p "$RESTORE_DIR"
-
+    cleanup_restore
     tar -xzf "$archive_file" -C "$RESTORE_DIR"
+
     log "Restoring from $archive_file"
     ludusavi restore --path "$RESTORE_DIR" --force
     log "Restore completed"
-}
-
-sync_local_from_cloud() {
-    log "Syncing cloud backups to local backup directory"
-    rclone sync "$REMOTE" "$BACKUP_DIR"
-    log "Sync completed"
-}
-
-refresh_history() {
-    find "$BACKUP_DIR" -maxdepth 1 -type f -name '*.tar.gz' | sort
-}
-
-write_timer() {
-    mkdir -p "$USER_SYSTEMD_DIR"
-
-    cat > "$SERVICE_FILE" <<SERVICE
-[Unit]
-Description=GSM backup service
-
-[Service]
-Type=oneshot
-WorkingDirectory=$HOME/gsm
-ExecStart=$HOME/gsm/src/gsm_cli.sh backup
-SERVICE
-
-    cat > "$TIMER_FILE" <<TIMER
-[Unit]
-Description=Run GSM backup on schedule
-
-[Timer]
-OnCalendar=$SCHEDULE
-Persistent=true
-
-[Install]
-WantedBy=timers.target
-TIMER
-
-    systemctl --user daemon-reload
-    systemctl --user enable --now gsm.timer >/dev/null 2>&1 || true
-}
-
-update_schedule() {
-    local new_schedule="${1:-}"
-    if [ -z "$new_schedule" ]; then
-        log "update-schedule requires a value"
-        exit 1
-    fi
-
-    set_config "schedule" "$new_schedule" "$CONFIG_FILE"
-    SCHEDULE="$new_schedule"
-    write_timer
-    log "Schedule updated to: $new_schedule"
-}
-
-update_remote() {
-    local new_remote="${1:-}"
-    if [ -z "$new_remote" ]; then
-        log "update-remote requires a value"
-        exit 1
-    fi
-
-    set_config "remote" "$new_remote" "$CONFIG_FILE"
-    log "Remote updated to: $new_remote"
-}
-
-update_max_backups() {
-    local new_max="${1:-}"
-    if ! [[ "$new_max" =~ ^[0-9]+$ ]]; then
-        log "update-max-backups requires a positive integer"
-        exit 1
-    fi
-
-    set_config_raw "max_backups_per_game" "$new_max" "$CONFIG_FILE"
-    log "Max backups per game updated to: $new_max"
 }
 
 usage() {
@@ -252,14 +238,13 @@ GSM CLI
 
 Usage:
   ./src/gsm_cli.sh backup
-  ./src/gsm_cli.sh restore
-  ./src/gsm_cli.sh restore-file "/path/to/archive.tar.gz"
-  ./src/gsm_cli.sh sync
-  ./src/gsm_cli.sh history
   ./src/gsm_cli.sh manual-backup "/path/to/save" "Game Name"
-  ./src/gsm_cli.sh update-schedule "*-*-* 22:00"
-  ./src/gsm_cli.sh update-remote "onedrive:/game-backups"
-  ./src/gsm_cli.sh update-max-backups 7
+  ./src/gsm_cli.sh sync
+  ./src/gsm_cli.sh restore
+  ./src/gsm_cli.sh restore-all
+  ./src/gsm_cli.sh restore-game "Game Name"
+  ./src/gsm_cli.sh restore-file "/path/to/archive.tar.gz"
+  ./src/gsm_cli.sh history
 USAGE
 }
 
@@ -270,30 +255,27 @@ case "$cmd" in
         check_running_games
         backup_auto
         ;;
-    restore)
-        restore_latest
-        ;;
-    restore-file)
-        restore_file "${2:-}"
-        ;;
-    sync)
-        sync_local_from_cloud
-        ;;
-    history)
-        refresh_history
-        ;;
     manual-backup)
         check_running_games
         backup_manual "${2:-}" "${3:-}"
         ;;
-    update-schedule)
-        update_schedule "${2:-}"
+    sync)
+        sync_library
         ;;
-    update-remote)
-        update_remote "${2:-}"
+    restore)
+        restore_latest
         ;;
-    update-max-backups)
-        update_max_backups "${2:-}"
+    restore-all)
+        restore_all
+        ;;
+    restore-game)
+        restore_game_latest "${2:-}"
+        ;;
+    restore-file)
+        restore_file "${2:-}"
+        ;;
+    history)
+        refresh_history
         ;;
     *)
         usage

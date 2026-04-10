@@ -1,0 +1,21 @@
+---
+name: Elden Ring
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:37.433761651Z"
+    os: linux
+    files:
+      /home/henrick/Games/Heroic/Prefixes/default/Elden Ring/drive_c/users/steamuser/AppData/Roaming/EldenRing/76561197960267366/ER0000.sl2:
+        hash: 43f7e61efbfa6dff0308846e00f41d9a8a77801e
+        size: 28967888
+      /home/henrick/Games/Heroic/Prefixes/default/Elden Ring/drive_c/users/steamuser/AppData/Roaming/EldenRing/76561197960267366/ER0000.sl2.bak:
+        hash: 43f7e61efbfa6dff0308846e00f41d9a8a77801e
+        size: 28967888
+      /home/henrick/Games/Heroic/Prefixes/default/Elden Ring/drive_c/users/steamuser/AppData/Roaming/EldenRing/GraphicsConfig.xml:
+        hash: 3015e9d7726e1be72446c3d4400bd084d1809b13
+        size: 2412
+    registry:
+      hash: ~
+    children: []

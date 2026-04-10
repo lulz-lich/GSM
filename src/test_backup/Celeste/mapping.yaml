@@ -1,0 +1,18 @@
+---
+name: Celeste
+drives:
+  drive-0: ""
+backups:
+  - name: "."
+    when: "2026-04-10T18:07:37.822780084Z"
+    os: linux
+    files:
+      /mnt/266618F26618C509/Games/Celeste/Saves/0.celeste:
+        hash: 4ff86568fbeaa516948198c563ac3a4f7613e0a7
+        size: 15777
+      /mnt/266618F26618C509/Games/Celeste/Saves/settings.celeste:
+        hash: 67ae88bb60d052a0b682ca792bfc5e276ba126ca
+        size: 5077
+    registry:
+      hash: ~
+    children: []
