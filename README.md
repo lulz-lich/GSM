@@ -1,14 +1,7 @@
-      ___           ___           ___     
-     /\  \         /\  \         /\__\    
-    /::\  \       /::\  \       /::|  |   
-   /:/\:\  \     /:/\ \  \     /:|:|  |   
-  /:/  \:\  \   _\:\~\ \  \   /:/|:|__|__ 
- /:/__/_\:\__\ /\ \:\ \ \__\ /:/ |::::\__\
- \:\  /\ \/__/ \:\ \:\ \/__/ \/__/~~/:/  /
-  \:\ \:\__\    \:\ \:\__\         /:/  / 
-   \:\/:/  /     \:\/:/  /        /:/  /  
-    \::/  /       \::/  /        /:/  /   
-     \/__/         \/__/         \/__/                               
+ .---.  .----..-.   .-.
+/   __}{ {__  |  `.'  |
+\  {_ }.-._} }| |\ /| |
+ `---' `----' `-' ` `-'                        
 Game Save Manager for Linux and Windows.
 
 GSM creates versioned backups of game saves, uploads them to the cloud, synchronizes the backup library between machines, and restores saves when needed.
