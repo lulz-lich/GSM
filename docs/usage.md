@@ -1,33 +1,26 @@
-
----
-
-## ⚙️ usage.md (VERSÃO FINAL)
-
-```md
 # GSM Usage Guide
 
-This guide explains how to use GSM on Linux and Windows.
+GSM (Game Save Manager) lets you backup, sync, and restore game saves across Linux and Windows.
 
 ---
 
-## Core Concepts
+## Core Idea (read this or regret later)
 
-### Backup
-Creates a new version of game saves and uploads it.
+GSM separates everything into 3 actions:
 
-### Sync Backup Library
-Downloads backups from the cloud into the local backup library.
+- **Backup** → creates a new version of your save
+- **Sync** → downloads backups from the cloud
+- **Restore** → overwrites your current save with a backup
 
-### Restore
-Applies backups to the actual game save locations.
+If you mix these up, you will lose progress.
 
 ---
 
-## Linux Usage
+## Safe Workflow
 
-### CLI
+Always follow this when restoring:
 
-#### Automatic backup
-
-```bash
-./src/gsm_cli.sh backup
+```text
+1. Backup current save
+2. Sync (if using another machine)
+3. Restore desired version
